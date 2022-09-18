@@ -7,7 +7,7 @@
     "scripts": {
       "_comment": "the preceeding keyword 'pre' or 'post' makes before and after the original command",
       "_comment2": "`cpy` has a bug in the --cwd flag, so explicitly specify ./src as ",
-      "prevscodedebug": "echo ***pre-buildling*** && cpy './src/**/*' '!./src/**/*.ts' './dist/'",
+      "prevscodedebug": "echo ***pre-buildling*** && rm -rf ./dist/ && cpy './src/**/*' '!./src/**/*.ts' './dist/'",
       "vscodedebug": "echo ***buildling*** && tsc --build"
     },
     "author": "",
