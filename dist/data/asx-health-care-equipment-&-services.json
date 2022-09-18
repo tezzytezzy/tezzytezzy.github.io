@@ -1,0 +1,134 @@
+[
+  {
+    "symbol": "1ST",
+    "displayName": "1ST GROUP LIMITED",
+    "industry": "Health Care Equipment & Services",
+    "dateListed": "2015-06-09",
+    "marketCap": 11593564,
+    "xid": "274180515",
+    "priceChangeFiveDayPercent": 19.760479041916163,
+    "isRecentListing": false,
+    "priceAsk": 0.01,
+    "priceBid": 0.009000000000000001,
+    "priceChange": 0.0009999999999999992,
+    "priceChangePercent": 11.111111111111102,
+    "priceLast": 0.01,
+    "sector": "Health Care",
+    "industryGroup": "Health Care Equipment & Services",
+    "securityType": 1,
+    "volume": 1132553,
+    "statusCode": "",
+    "isin": "AU0000001ST0",
+    "priceClose": 0.009000000000000001,
+    "priceDayHigh": 0.01,
+    "priceDayLow": 0.009000000000000001,
+    "priceFiftyTwoWeekHigh": 0.01851,
+    "priceFiftyTwoWeekLow": 0.003,
+    "volumeAverage": 722427.067568,
+    "cashFlow": -2.8188,
+    "earningsPerShare": -0.01257,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 1288173816,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 5088170,
+        "netIncome": -6821940,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 5382650,
+        "netIncome": -6468710,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 4848910,
+        "netIncome": -5007040,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 3950800,
+        "netIncome": -4304090,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  },
+  {
+    "symbol": "4DX",
+    "displayName": "4DMEDICAL LIMITED",
+    "industry": "Health Care Equipment & Services",
+    "dateListed": "2020-08-07",
+    "marketCap": 188474776,
+    "xid": "608309060",
+    "priceChangeFiveDayPercent": -10.576923076923075,
+    "isRecentListing": false,
+    "priceAsk": 0.65,
+    "priceBid": 0.62,
+    "priceChange": -0.015000000000000013,
+    "priceChangePercent": -2.343750000000002,
+    "priceLast": 0.625,
+    "sector": "Health Care",
+    "industryGroup": "Health Care Equipment & Services",
+    "securityType": 1,
+    "volume": 500029,
+    "statusCode": "",
+    "isin": "AU0000095416",
+    "priceClose": 0.64,
+    "priceDayHigh": 0.6425000000000001,
+    "priceDayLow": 0.615,
+    "priceFiftyTwoWeekHigh": 1.575,
+    "priceFiftyTwoWeekLow": 0.32,
+    "volumeAverage": 601934.946809,
+    "cashFlow": -28.77006,
+    "earningsPerShare": -0.08351,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 294491837,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 1054300,
+        "netIncome": -24592880,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 216980,
+        "netIncome": -21420530,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 1232500,
+        "netIncome": -21975380,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 695000,
+        "netIncome": -6491010,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  }
+]

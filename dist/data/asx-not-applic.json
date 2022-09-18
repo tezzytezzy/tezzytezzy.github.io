@@ -1,0 +1,70 @@
+[
+  {
+    "symbol": "TCF",
+    "displayName": "360 CAPITAL ENHANCED INCOME FUND",
+    "industry": "Not Applic",
+    "dateListed": "2006-10-17",
+    "marketCap": 21937877,
+    "xid": "5457157",
+    "priceChangeFiveDayPercent": -1.0291595197255508,
+    "isRecentListing": false,
+    "priceAsk": 5.4,
+    "priceBid": 5.3100000000000005,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 5.3100000000000005,
+    "securityType": 6,
+    "volume": 0,
+    "statusCode": "",
+    "isin": "AU0000108771",
+    "priceClose": 5.3100000000000005,
+    "priceFiftyTwoWeekHigh": 5.94,
+    "priceFiftyTwoWeekLow": 4.9,
+    "volumeAverage": 2505.532258,
+    "dateExDate": "2022-08-30",
+    "datePayDate": "2022-09-07",
+    "dateRecordDate": "2022-08-31",
+    "dividend": 0.03,
+    "dividendType": "I",
+    "frankingPercent": 0,
+    "cashFlow": 0.035,
+    "earningsPerShare": 0.3636,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": 14.60396,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Units Fully Paid",
+    "numOfShares": 4131427,
+    "yieldAnnual": 6.779661016949153,
+    "incomeStatement": [
+      {
+        "revenue": 1587000,
+        "netIncome": 1378000,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 416000,
+        "netIncome": 459000,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 643370,
+        "netIncome": 756710,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 847500,
+        "netIncome": 1255880,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  }
+]

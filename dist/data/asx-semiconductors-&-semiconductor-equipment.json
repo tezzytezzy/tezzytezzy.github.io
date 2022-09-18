@@ -1,0 +1,68 @@
+[
+  {
+    "symbol": "4DS",
+    "displayName": "4DS MEMORY LIMITED",
+    "industry": "Semiconductors & Semiconductor Equipment",
+    "dateListed": "2010-12-09",
+    "marketCap": 41433432,
+    "xid": "26906406",
+    "priceChangeFiveDayPercent": 8.750000000000007,
+    "isRecentListing": false,
+    "priceAsk": 0.029,
+    "priceBid": 0.028,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 0.028,
+    "sector": "Information Technology",
+    "industryGroup": "Semiconductors & Semiconductor Equipment",
+    "securityType": 1,
+    "volume": 3259463,
+    "statusCode": "",
+    "isin": "AU0000004DS8",
+    "priceClose": 0.028,
+    "priceDayHigh": 0.028,
+    "priceDayLow": 0.027,
+    "priceFiftyTwoWeekHigh": 0.15,
+    "priceFiftyTwoWeekLow": 0.022,
+    "volumeAverage": 9396927.428571,
+    "cashFlow": -5.64165,
+    "earningsPerShare": -0.00483,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 1479765442,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 28100,
+        "netIncome": -6732080,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 6830,
+        "netIncome": -6657840,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 33510,
+        "netIncome": -5469280,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 17770,
+        "netIncome": -5782670,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  }
+]

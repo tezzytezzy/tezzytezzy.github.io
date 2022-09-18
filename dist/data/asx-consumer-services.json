@@ -1,0 +1,138 @@
+[
+  {
+    "symbol": "3PL",
+    "displayName": "3P LEARNING LIMITED..",
+    "industry": "Consumer Services",
+    "dateListed": "2014-07-09",
+    "marketCap": 334545846,
+    "xid": "76419072",
+    "priceChangeFiveDayPercent": 2.14723926380369,
+    "isRecentListing": false,
+    "priceAsk": 1.37,
+    "priceBid": 1.11,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 1.21,
+    "sector": "Consumer Discretionary",
+    "industryGroup": "Consumer Services",
+    "securityType": 1,
+    "volume": 0,
+    "statusCode": "",
+    "isin": "AU0000003PL9",
+    "priceClose": 1.21,
+    "priceFiftyTwoWeekHigh": 1.85,
+    "priceFiftyTwoWeekLow": 1.16,
+    "volumeAverage": 10237.076923,
+    "dateExDate": "2015-10-06",
+    "datePayDate": "2015-10-22",
+    "dateRecordDate": "2015-10-08",
+    "dividend": 0.018,
+    "dividendType": "F",
+    "frankingPercent": 100,
+    "cashFlow": 7.651,
+    "earningsPerShare": -0.00194,
+    "freeCashFlowYield": 0.033998329322097114,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": 29.41321,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 276484170,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 97288000,
+        "netIncome": -536000,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 57563000,
+        "netIncome": -9369000,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 55225000,
+        "netIncome": 517000,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 54682000,
+        "netIncome": 5911000,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  },
+  {
+    "symbol": "8VI",
+    "displayName": "8VI HOLDINGS LIMITED",
+    "industry": "Consumer Services",
+    "dateListed": "2015-12-16",
+    "marketCap": 34752766,
+    "xid": "320037656",
+    "priceChangeFiveDayPercent": -8.163265306122442,
+    "isRecentListing": false,
+    "priceAsk": 0.84,
+    "priceBid": 0.8,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 0.8200000000000001,
+    "sector": "Consumer Discretionary",
+    "industryGroup": "Consumer Services",
+    "securityType": 1,
+    "volume": 671,
+    "statusCode": "",
+    "isin": "AU0000026007",
+    "priceClose": 0.8200000000000001,
+    "priceDayHigh": 0.8200000000000001,
+    "priceDayLow": 0.8200000000000001,
+    "priceFiftyTwoWeekHigh": 5.35,
+    "priceFiftyTwoWeekLow": 0.8,
+    "volumeAverage": 3236.148148,
+    "cashFlow": 7.1693,
+    "earningsPerShare": 0.04423,
+    "freeCashFlowYield": 0.1823812424539761,
+    "priceEarningsRatio": 18.5386,
+    "priceToCash": 5.48302,
+    "foreignExempt": false,
+    "shareDescription": "Chess Depositary Interests 1:1",
+    "numOfShares": 42381422,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 31353140,
+        "netIncome": 1985400,
+        "period": "2022A",
+        "fPeriodEndDate": 44651,
+        "curCode": "SGD"
+      },
+      {
+        "revenue": 25960660,
+        "netIncome": 5861410,
+        "period": "2021A",
+        "fPeriodEndDate": 44286,
+        "curCode": "SGD"
+      },
+      {
+        "revenue": 10859350,
+        "netIncome": 1072050,
+        "period": "2020A",
+        "fPeriodEndDate": 43921,
+        "curCode": "SGD"
+      },
+      {
+        "revenue": 22291340,
+        "netIncome": -4867350,
+        "period": "2019A",
+        "fPeriodEndDate": 43555,
+        "curCode": "SGD"
+      }
+    ]
+  }
+]

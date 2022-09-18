@@ -1,0 +1,68 @@
+[
+  {
+    "symbol": "14D",
+    "displayName": "1414 DEGREES LIMITED",
+    "industry": "Capital Goods",
+    "dateListed": "2018-09-12",
+    "marketCap": 17572735,
+    "xid": "486191506",
+    "priceChangeFiveDayPercent": 0,
+    "isRecentListing": false,
+    "priceAsk": 0.088,
+    "priceBid": 0.083,
+    "priceChange": -0.0030000000000000027,
+    "priceChangePercent": -3.4482758620689684,
+    "priceLast": 0.084,
+    "sector": "Industrials",
+    "industryGroup": "Capital Goods",
+    "securityType": 1,
+    "volume": 19078,
+    "statusCode": "",
+    "isin": "AU0000010696",
+    "priceClose": 0.08700000000000001,
+    "priceDayHigh": 0.088,
+    "priceDayLow": 0.083,
+    "priceFiftyTwoWeekHigh": 0.16,
+    "priceFiftyTwoWeekLow": 0.072,
+    "volumeAverage": 94225.119565,
+    "cashFlow": -4.74472,
+    "earningsPerShare": -0.00681,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 201985458,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 566610,
+        "netIncome": -1369310,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 486550,
+        "netIncome": -5974180,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 411050,
+        "netIncome": -2865960,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 298820,
+        "netIncome": -4270820,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  }
+]

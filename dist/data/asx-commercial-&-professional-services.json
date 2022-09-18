@@ -1,0 +1,114 @@
+[
+  {
+    "symbol": "T3D",
+    "displayName": "333D LIMITED",
+    "industry": "Commercial & Professional Services",
+    "dateListed": "2006-12-27",
+    "marketCap": 4581445,
+    "xid": "5947361",
+    "priceChangeFiveDayPercent": 0,
+    "isRecentListing": false,
+    "priceAsk": 0.002,
+    "priceBid": 0.001,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 0.0015,
+    "sector": "Industrials",
+    "industryGroup": "Commercial & Professional Services",
+    "securityType": 1,
+    "volume": 0,
+    "statusCode": "",
+    "isin": "AU000000T3D6",
+    "priceClose": 0.0015,
+    "priceFiftyTwoWeekHigh": 0.005,
+    "priceFiftyTwoWeekLow": 0.001,
+    "volumeAverage": 2067753.075472,
+    "cashFlow": -0.19578,
+    "earningsPerShare": -0.00047,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 3054296668,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 63680,
+        "netIncome": -1235030,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 114970,
+        "netIncome": -338790,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 186150,
+        "netIncome": -598090,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 430620,
+        "netIncome": 374440,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  },
+  {
+    "symbol": "3MF",
+    "displayName": "3D METALFORGE LIMITED",
+    "industry": "Commercial & Professional Services",
+    "dateListed": "2021-03-02",
+    "marketCap": -1,
+    "xid": "636135750",
+    "priceChangeFiveDayPercent": 7.777777777777785,
+    "isRecentListing": false,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 0.013000000000000001,
+    "sector": "Industrials",
+    "industryGroup": "Commercial & Professional Services",
+    "securityType": 1,
+    "volume": 0,
+    "statusCode": "",
+    "isin": "AU0000130122",
+    "priceClose": 0.013000000000000001,
+    "priceFiftyTwoWeekHigh": 0.165,
+    "priceFiftyTwoWeekLow": 0.011,
+    "volumeAverage": 389379.382353,
+    "cashFlow": -6.61752,
+    "earningsPerShare": -0.03063,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 240839445,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 1300600,
+        "netIncome": -5140480,
+        "period": "2021A",
+        "fPeriodEndDate": 44561,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 0,
+        "netIncome": -470310,
+        "period": "2020A",
+        "fPeriodEndDate": 44196,
+        "curCode": "AUD"
+      }
+    ]
+  }
+]
