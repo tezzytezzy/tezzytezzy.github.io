@@ -36,11 +36,6 @@ jobs:
       - name: Transpile to js files
         run: |
           npm run vscodedebug
-          ls -la .
-          ls -la ./dist
-          ls -la ./dist/scripts
-          ls -la ./dist/script
-          ls -la ./dist/data
       - name: Create ASX data files 
         run: |
           node ./dist/scripts/asx.js
