@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - name: Specify node
+        uses: actions/setup-node@v2
         with:
           node-version: '16.14.2' 
       - name: Install packages
@@ -38,6 +39,8 @@ jobs:
           ls -la .
           ls -la ./dist
           ls -la ./dist/scripts
+          ls -la ./dist/script
+          ls -la ./dist/data
       - name: Create ASX data files 
         run: |
           node ./dist/scripts/asx.js
