@@ -24,8 +24,7 @@ jobs:
         # npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
         # npm ERR! later to generate a package-lock.json file, then try again.
         run: |
-          npm install
-          npm ls
+          npm ci
       - name: Copy all non-TS files in 'src' folder to 'dist' folder
         run: npm run prevscodedebug
       # - name: Copy all non-TS files in 'src' folder to 'dist' folder
