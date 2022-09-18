@@ -18,7 +18,11 @@ jobs:
           node-version: '16.14.2' 
       - name: Install packages
         # Similar to npm install, except it's meant to be used in automated environments to make sure a clean install of your dependencies.
-        run: npm ci
+        # BUT, npm ci gives me the following error...
+        # npm ERR! The `npm ci` command can only install with an existing package-lock.json or
+        # npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+        # npm ERR! later to generate a package-lock.json file, then try again.
+        run: npm install
       - name: Build Node
         run: npm run package # npm run build?
       - name: Copy all non-TS files in 'src' folder to 'dist' folder
