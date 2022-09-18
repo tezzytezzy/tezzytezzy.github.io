@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.writeFile("../../dist/data/test.txt", "Hello me", (err) => {
+fs.writeFile(process.env.DATA_DIR + "test.txt", "Hello me", (err) => {
     if (err)
       console.log(err);
     else {
