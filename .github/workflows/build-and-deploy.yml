@@ -30,8 +30,10 @@ jobs:
       # - name: Copy all non-TS files in 'src' folder to 'dist' folder
       #   run: |
       #     cpy './src/**/*' '!./src/**/*.ts' './dist/'
-      - name: Transpile TS files
-        uses: iCrawl/action-tsc@v1
+      # - name: Transpile TS files
+      #   uses: iCrawl/action-tsc@v1
+      - name: Transpile to js files
+        run: npm run vscodedebug
       - name: Create ASX data files 
         run: |
           node ./dist/scripts/asx.js
