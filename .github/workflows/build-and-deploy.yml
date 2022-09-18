@@ -1,7 +1,11 @@
 name: GitHub Actions Demo
 on: [push]
+# on:
+#   # https://crontab.guru ““At 22:00 on every day-of-week from Sunday through Thursday.”
+#   schedule:
+#     - cron: "0 22 * * 0-4"
 jobs:
-  ASX Data Loader:
+  ASX-Data-Loader:
     runs-on: ubuntu-latest # look for a lighter image
     env: 
       CI_COMMIT: Github Actions CI
