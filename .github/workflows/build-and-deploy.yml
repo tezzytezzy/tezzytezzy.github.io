@@ -33,7 +33,11 @@ jobs:
       # - name: Transpile TS files
       #   uses: iCrawl/action-tsc@v1
       - name: Transpile to js files
-        run: npm run vscodedebug
+        run: |
+          npm run vscodedebug
+          ls -la .
+          ls -la ./dist
+          ls -la ./dist/scripts
       - name: Create ASX data files 
         run: |
           node ./dist/scripts/asx.js
