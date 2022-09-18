@@ -6,14 +6,13 @@ jobs:
     env: 
       CI_COMMIT_MESSAGE: Github Actions CI Build Artifacts
       CI_COMMIT_AUTHOR: Github Actions CI
-      DATA_DIR: ${{ github.workspace }}/dist/data/
+      DATA_DIR: ./dist/data/
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Create a text file 
-        working-directory: ${{ env.DATA_DIR }}
         run: |
-          date > demo.txt
+          date > ${{ env.DATA_DIR }}demo.txt
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "username@users.noreply.github.com"
           git add .
