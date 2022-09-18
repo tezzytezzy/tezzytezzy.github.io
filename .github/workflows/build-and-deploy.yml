@@ -14,7 +14,7 @@ jobs:
       #   uses: iCrawl/action-tsc@v1
       - name: Create a text file 
         run: |
-          node ./dist/scripts/test.js
+          node ./src/scripts/test.js
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "username@users.noreply.github.com"
           git add .
