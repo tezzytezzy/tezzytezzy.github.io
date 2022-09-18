@@ -10,9 +10,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      # - name: tsc compile
+      #   uses: iCrawl/action-tsc@v1
       - name: Create a text file 
         run: |
-          date > ${{ env.DATA_DIR }}demo.txt
+          node ./dist/scripts/test.js
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "username@users.noreply.github.com"
           git add .
