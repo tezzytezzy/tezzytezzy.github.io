@@ -22,7 +22,9 @@ jobs:
         # npm ERR! The `npm ci` command can only install with an existing package-lock.json or
         # npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
         # npm ERR! later to generate a package-lock.json file, then try again.
-        run: npm install
+        run: |
+          npm install
+          npm ls
       # - name: Build Node
       #   run: npm run build # npm run package?
       - name: Copy all non-TS files in 'src' folder to 'dist' folder
