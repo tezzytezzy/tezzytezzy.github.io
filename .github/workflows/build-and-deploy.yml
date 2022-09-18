@@ -25,11 +25,11 @@ jobs:
         run: |
           npm install
           npm ls
-      # - name: Build Node
-      #   run: npm run build # npm run package?
       - name: Copy all non-TS files in 'src' folder to 'dist' folder
-        run: |
-          cpy './src/**/*' '!./src/**/*.ts' './dist/'
+        run: npm run prevscodedebug
+      # - name: Copy all non-TS files in 'src' folder to 'dist' folder
+      #   run: |
+      #     cpy './src/**/*' '!./src/**/*.ts' './dist/'
       - name: Transpile TS files
         uses: iCrawl/action-tsc@v1
       - name: Create ASX data files 
