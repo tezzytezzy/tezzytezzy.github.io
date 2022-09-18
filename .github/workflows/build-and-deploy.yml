@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  Brand new job:
+  id: brand-new-job:
     runs-on: ubuntu-latest # look for a lighter image
     env: 
       CI_COMMIT_MESSAGE: Github Actions CI Build Artifacts
