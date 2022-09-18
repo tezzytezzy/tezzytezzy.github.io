@@ -12,8 +12,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Create a text file 
         run: |
-          date > demo.txt
-          ls -la
+          date > ${{ env.DATA_DIR }}demo.txt
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "username@users.noreply.github.com"
           git add .
