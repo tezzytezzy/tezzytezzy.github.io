@@ -150,9 +150,9 @@ async function getJson(url: string): Promise<string> {
 
 async function getCompDir() {
   function getCompDirUrl(secCount: number): string {
-    return (process.env.ASX_API_URL_COMP_DIR_PREFIX as string)
+    return "https://asx.api.markitdigital.com/asx-research/1.0/companies/directory?page=0&itemsPerPage="
       + secCount
-      + (process.env.ASX_API_URL_COMP_DIR_SUFFIX as string)
+      + "&order=ascending&orderBy=companyName&includeFilterOptions=true&recentListingsOnly=false"
   }
 
   const oneSecData = await getJson(getCompDirUrl(1))
@@ -213,11 +213,11 @@ async function createAsxFiles() {
       let secListPerIndustry: Object[] = []
        
       for (let secCompDir of secPerIndustryData[industryIdx]) {
-        const url = process.env.ASX_API_URL_COMP_PREFIX + secCompDir.symbol   
+        const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol   
         let mergedSecData: Object = secCompDir
 
-        const res = await Promise.allSettled([getJson(url + process.env.ASX_API_URL_COMP_HEADER_SUFFIX),
-                            getJson(url + process.env.ASX_API_URL_COMP_KEY_STATISTICS_SUFFIX)])
+        const res = await Promise.allSettled([getJson(url + "/header"),
+                            getJson(url + "/key-statistics")])
 
         res.forEach(result => {
           if (result.status == "fulfilled") {
@@ -354,8 +354,8 @@ async function createAsxFiles() {
         //   reason?: undefined
         // }
    
-    saveAsxJsonFile(compDirData, (process.env.ASX_COMP_DIR_DATA_FILE_NAME as string))
-    saveAsxJsonFile(secAllData, (process.env.ASX_COMP_ALL_DATA_FILE_NAME as string))
+    saveAsxJsonFile(compDirData, "comp-dir.json")
+    saveAsxJsonFile(secAllData, "comp-all-data.json")
   } else {
     console.error("No data")
   }
@@ -363,8 +363,8 @@ async function createAsxFiles() {
 
 async function saveAsxJsonFile(jsonData: Object[], filename: string) {
   await writeFile(JSON.stringify(jsonData, null, 2),
-            (process.env.DATA_DIR as string),
-            (process.env.ASX_DATA_FILE_NAME_PREFIX as string) + filename)
+            "/dist/data/",
+            "asx-" + filename)
 }
 
 createAsxFiles()

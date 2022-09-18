@@ -1,357 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>ASX Data Bank</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- 1. Import the @botpoison/browser script -->
-		<script src="https://unpkg.com/@botpoison/browser" async></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-	<!-- Visit counter-->
-<!--
-<script>
-var xhr = new XMLHttpRequest()
-xhr.open("GET", "https://api.countapi.xyz/hit/tezzytezzy.github.io/visits")
-xhr.responseType = "json"
-xhr.onload = function() {
-// document.title = "ASX Data Bank (" + this.response.value + )"
-document.querySelector('title').textContent = "ASX Data Bank (" + this.response.value + )"
-}
-xhr.send()
-</script>
--->
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"></a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#download">Download</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#visualiser">Visualiser</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <p></p>
-        <!-- Masthead-->
-<!--
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
--->
-                <!-- Masthead Avatar Image-->
-                <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />-->
-                <!-- Masthead Heading-->
-                <!-- <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>-->
-                <!-- Icon Divider-->
-<!--
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
--->
-                <!-- Masthead Subheading-->
-<!--
-                <p class="masthead-subheading font-weight-light mb-0">Technical Analysis - Data Science - Relative Value Analysis</p>
-            </div>
-        </header>
--->
 
-        <!-- Download Section-->
-        <section class="page-section download" id="download">
-            <div class="container">
-                <!-- Download Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Download</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-<table class="table">
-  <thead class="table-dark">
-    <tr>
-      <th scope="col">Sector</th>
-      <th scope="col">Industry Group</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-success">
-    <th scope="row">ALL INDUSTRIES</th>
-    <td><a href="javascript:void()" onclick="location.href=/dist/data/all-industries" class="mw-redirect" title="ALL INDUSTRIES">ALL INDUSTRIES</a>
-    </tr>
-    <tr>
-      <th scope="row">Energy</th>
-      <td><a href="/energy" class="mw-redirect" title="Energy">Energy</a>
-    </tr>
-    <tr>
-      <th scope="row">Materials</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Materials">Materials</a>
-    </tr>
-    <tr>
-      <th rowspan="3">Industrials</th>	
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Capital Good">Capital Goods</a>
-      </td>
-      </tr><!-- this tag is inserted AFTER the first spanned element, not BEFORE -->
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Commercial & Professional Services">Commercial & Professional Services</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Transportation">Transportation</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th rowspan="4">Consumer Discretionary (Consumer Cyclical)</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Automobiles & Components">Automobiles & Components</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Consumer Durables & Apparel">Consumer Durables & Apparel</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Consumer Services">Consumer Services</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Retailings">Retailing</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th rowspan="3">Consumer Staples (Consumer Defensive)</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Food & Staples Retailing">Food & Staples Retailing</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Food, Beverage & Tobacco">Food, Beverage & Tobacco</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Household & Personal Products">Household & Personal Products</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th rowspan="2">Health Care</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Health Care Equipment & Services">Health Care Equipment & Services</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Pharmaceuticals, Biotechnology & Life Sciences">Pharmaceuticals, Biotechnology & Life Sciences</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th rowspan="3">Financials</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Banks">Banks</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Diversified Financials">Diversified Financials</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Insurance">Insurance</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th rowspan="3">Information Technology</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Software & Services">Software & Services</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Technology Hardware & Equipment">Technology Hardware & Equipment</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Semiconductors & Semiconductor Equipment">Semiconductors & Semiconductor Equipment</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th rowspan="2">Communication Services</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Telecommunication Services">Telecommunication Services</a>
-      </td>
-      </tr>
-      <tr>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Media & Entertainment">Media & Entertainment</a>
-      </td>
-      </tr>
-    </tr>
-    <tr>
-      <th scope="row">Utilities</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Utilities">Utilities</a>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Real Estate</th>
-      <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Real Estate">Real Estate</a>
-      </td>
-    </tr>
-    <tr class="table-warning">
-    <th scope="row" rowspan="2">MISCELLANEOUS</th>
-    <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Class Pend">Classification Pending</a>
-    </tr>
-    <tr class="table-warning">
-    <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Not Applic">Not Applicable</a>
-    </tr>
-    </tr>
-  </tbody>
-  </tbody>
-</table>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="ASX Data Bank" />
+  <meta name="author" content="East 3621 Inc." />
+  <title>ASX Data Bank</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <!-- 1. Import the @botpoison/browser script -->
+  <script src="https://unpkg.com/@botpoison/browser" async></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="scripts/sbscripts.js"></script>
+  <script>
+    var formElement = document.getElementById("contact-form-id");
+    var buttonElement = document.getElementById("button-id");
+    formElement.addEventListener("botpoison-challenge-start", function () {
+      buttonElement.setAttribute("disabled", "disabled");
+    });
+    formElement.addEventListener("botpoison-challenge-success", function () {
+      buttonElement.removeAttribute("disabled");
+    });
+    formElement.addEventListener("botpoison-challenge-error", function () {
+      buttonElement.removeAttribute("disabled");
+    });
+  </script>
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top"></a>
+      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#download">Download</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="#visualiser">Visualiser</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <!-- Download Section-->
+  <section class="page-section download" id="download">
+    <br>
+    <div class="container">
+      <!-- Download Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Download</h2>
+      <br>
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Sector</th>
+            <th scope="col">Industry Group</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <th scope="row">ALL INDUSTRIES</th>
+            <td><a href="javascript:void()" onclick="location.href=/dist/data/all-industries" class="mw-redirect"
+                title="ALL INDUSTRIES">ALL INDUSTRIES</a>
+              <!--<td class="td-link"><a href="#" class="mw-redirect" title="ALL INDUSTRIES">ALL INDUSTRIES</a>-->
+          </tr>
+          <tr>
+            <th scope="row">Energy</th>
+            <td class="td-link"><a href="/energy" class="mw-redirect" title="Energy">Energy</a>
+          </tr>
+          <tr>
+            <th scope="row">Materials</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Materials">Materials</a>
+          </tr>
+          <tr>
+            <th rowspan="3">Industrials</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Capital Good">Capital Goods</a>
+            </td>
+          </tr><!-- this tag is inserted AFTER the first spanned element, not BEFORE -->
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Commercial & Professional Services">Commercial &
+                Professional Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Transportation">Transportation</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th rowspan="4">Consumer Discretionary (Consumer Cyclical)</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Automobiles & Components">Automobiles &
+                Components</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Consumer Durables & Apparel">Consumer Durables &
+                Apparel</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Consumer Services">Consumer Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Retailings">Retailing</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th rowspan="3">Consumer Staples (Consumer Defensive)</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Food & Staples Retailing">Food & Staples
+                Retailing</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Food, Beverage & Tobacco">Food, Beverage &
+                Tobacco</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Household & Personal Products">Household &
+                Personal Products</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th rowspan="2">Health Care</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Health Care Equipment & Services">Health Care
+                Equipment & Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect"
+                title="Pharmaceuticals, Biotechnology & Life Sciences">Pharmaceuticals, Biotechnology & Life
+                Sciences</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th rowspan="3">Financials</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Banks">Banks</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Diversified Financials">Diversified
+                Financials</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Insurance">Insurance</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th rowspan="3">Information Technology</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Software & Services">Software & Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Technology Hardware & Equipment">Technology
+                Hardware & Equipment</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect"
+                title="Semiconductors & Semiconductor Equipment">Semiconductors & Semiconductor Equipment</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th rowspan="2">Communication Services</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Telecommunication Services">Telecommunication
+                Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Media & Entertainment">Media & Entertainment</a>
+            </td>
+          </tr>
+          </tr>
+          <tr>
+            <th scope="row">Utilities</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Utilities">Utilities</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Real Estate</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Real Estate">Real Estate</a>
+            </td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row" rowspan="2">MISCELLANEOUS</th>
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Class Pend">Classification Pending</a>
+          </tr>
+          <tr class="table-warning">
+            <td><a href="/wiki/Capital_Good" class="mw-redirect" title="Not Applic">Not Applicable</a>
+          </tr>
+          </tr>
+        </tbody>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+  <!-- Visualiser Section-->
+  <section class="page-section bg-primary text-white mb-0" id="visualiser">
+    <div class="container">
+      <!-- Visualiser Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Visualiser</h2>
+      <br>
+      <!-- Visualiser Section Content-->
+      <div class="row">
+        <div class="col-lg-3 text-center ms-auto">
+          <p class="lead"><a href="https://www.koia.io/intro/index.html" class="link-light">Koia Data Analysis</a></p>
+        </div>
+        <div class="col-lg-3 text-center me-auto">
+          <p class="lead"><a href="https://www.rawgraphs.io/" class="link-light">RAWGraphs</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section-->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <!-- Contact Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <br>
+      <!-- Contact Section Form-->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+          <form id="contact-form-id" action="https://submit-form.com/rQCMG9YF"
+            data-botpoison-public-key="pk_c56c6d36-b7f5-4b16-9a64-876842548689">
+            <div class="form-group">
+              <!-- This label tag needs to be there for submit-form.com to work-->
+              <label for="email"></label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                placeholder="Email address" required>
             </div>
-        </section>
-        <!-- Visualiser Section-->
-        <section class="page-section bg-primary text-white mb-0" id="visualiser">
-            <div class="container">
-                <!-- Visualiser Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Visualiser</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Visualiser Section Content-->
-                <div class="row">
-                    <div class="col-lg-3 text-center ms-auto"><p class="lead"><a href="https://www.koia.io/intro/index.html" class="link-light">Koia Data Analysis</a></p></div>
-                    <div class="col-lg-3 text-center me-auto"><p class="lead"><a href="https://www.rawgraphs.io/" class="link-light">RAWGraphs</a></p></div>
-                </div>
+            <div class="form-group">
+              <!-- This label tag needs to be there for submit-form.com to work-->
+              <label for="message"></label>
+              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"
+                required></textarea>
             </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <!--<form id="contactForm" data-sb-form-api-token="API_TOKEN">-->
-<form
-  id="contactForm"
-  action="https://submit-form.com/rQCMG9YF"
-  data-botpoison-public-key="pk_c56c6d36-b7f5-4b16-9a64-876842548689"
-  type="hidden"
-  name="_redirect"
-  value="https:/google.com"
->
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <!--<a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-<script>
-  var formElement = document.getElementById("form");
-  var buttonElement = document.getElementById("button");
-  formElement.addEventListener("botpoison-challenge-start", function () {
-    buttonElement.setAttribute("disabled", "disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-success", function () {
-    buttonElement.removeAttribute("disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-error", function () {
-    buttonElement.removeAttribute("disabled");
-  });
-</script>
-        <!-- Download Modals-->
-        <!-- Download Modal 1-->
- 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
-    <!-- Default Statcounter code for asx https://tezzytezzy.github.io/index.html
-    -->
-    <script type="text/javascript">
-    var sc_project=12787337; 
-    var sc_invisible=1; 
-    var sc_security="b000caf8"; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    Statcounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12787337/0/b000caf8/1/"
-    alt="Web Analytics Made Easy - Statcounter"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-    <!-- End of Statcounter Code -->
-  </body>
+            <button id="button-id" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Copyright Section-->
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>
+        <p id="last-updated"><i>Last updated</i></p>
+        Copyright &copy; ASX Data Bank 2022
+      </small>
+    </div>
+  </div>
+  </div>
+  <!-- <script>
+    const td = document.querySelectorAll('.td-link');
+
+    td.forEach(function (v, i) {
+      td[i].addEventListener('click', function () {
+        // `this` can also be used here in substitute with the value passed through the forEach loop
+        // this.firstChild.outerHTML = "some new link";
+        // The following will change the actual HTML of the TD elements firstChild so the <a> tag will be the 
+        // string of HTML defined in the quotes below... 
+        v.firstChild.outerHTML = "<a href='" + stackoverflow.com + "' target='_blank'>" + v.firstChild.textContent + "</a>";
+      })
+    })
+  </script> -->
+</body>
+
 </html>

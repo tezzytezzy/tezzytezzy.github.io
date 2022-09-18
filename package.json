@@ -1,0 +1,25 @@
+{
+    "name": "Peer Analysis",
+    "version": "1.0.0",
+    "description": "Relative Value Analysis on Australian Listed Stocks",
+    "main": "asx.js",
+    "type": "module",
+    "scripts": {
+      "_comment": "the preceeding keyword 'pre' or 'post' makes before and after the original command",
+      "_comment2": "`cpy` has a bug in the --cwd flag, so explicitly specify ./src as ",
+      "prevscodedebug": "echo ***pre-buildling*** && cpy './src/**/*' '!./src/**/*.ts' './dist/'",
+      "vscodedebug": "echo ***buildling*** && tsc --build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/node": "^17.0.18",
+      "@types/superagent": "^4.1.15",
+      "cpy-cli": "^4.1.0",
+      "typescript": "^4.5.5"
+    },
+    "dependencies": {
+      "dotenv": "^16.0.0",
+      "superagent": "^7.1.1"
+    }
+  }  
