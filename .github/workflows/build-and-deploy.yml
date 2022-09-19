@@ -6,7 +6,7 @@ on: [push]
 #     - cron: "0 22 * * 0-4"
 jobs:
   ASX-Data-Loader:
-    runs-on: ubuntu-latest # look for a lighter image?
+    runs-on: ubuntu-latest # Look for a lighter image?
     env: 
       CI_COMMIT: Github Actions CI
       GITHUB_ACTIONS_ROOT_DIR: ${{ github.workspace }}
@@ -18,20 +18,14 @@ jobs:
         with:
           node-version: '16.14.2' 
       - name: Install packages
-        # Similar to npm install, except it's meant to be used in automated environments to make sure a clean install of your dependencies.
-        # BUT, npm ci gives me the following error...
-        # npm ERR! The `npm ci` command can only install with an existing package-lock.json or
-        # npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
-        # npm ERR! later to generate a package-lock.json file, then try again.
         run: |
+          # Similar to npm install, except it's meant to be used in automated environments to make sure a clean install of your dependencies.
+          # npm ERR! The `npm ci` command can only install with an existing package-lock.json or
+          # npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+          # npm ERR! later to generate a package-lock.json file, then try again.
           npm ci
       - name: Copy all non-TS files in 'src' folder to 'dist' folder
         run: npm run prevscodedebug
-      # - name: Copy all non-TS files in 'src' folder to 'dist' folder
-      #   run: |
-      #     cpy './src/**/*' '!./src/**/*.ts' './dist/'
-      # - name: Transpile TS files
-      #   uses: iCrawl/action-tsc@v1
       - name: Transpile to js files
         run: |
           npm run vscodedebug
