@@ -14,61 +14,13 @@ import fs from 'fs';
 // try http://httpstat.us/200 to get diff. status code
 // https://app.rawgraphs.io/ or www.koia.io
 config();
-// const jsonFileDir = process.cwd() + process.env.JSON_FILE_DIR + '/'
-const str_test = [
-    {
-        "symbol": "AMP",
-        "displayName": "AMP LIMITED",
-        "industry": "Diversified Financials",
-        "dateListed": "1998-06-15",
-        "marketCap": 3772352260,
-        "xid": "44817",
-        "priceChangeFiveDayPercent": -3.0042918454935554,
-        "isRecentListing": false
-    },
-    {
-        "symbol": "1ST",
-        "displayName": "1ST GROUP LIMITED",
-        "industry": "Health Care Equipment & Services",
-        "dateListed": "2015-06-09",
-        "marketCap": 11593564,
-        "xid": "274180515",
-        "priceChangeFiveDayPercent": -9.999999999999993,
-        "isRecentListing": false
-    },
-    {
-        "symbol": "2ST",
-        "displayName": "2ST GROUP LIMITED",
-        "industry": "Diversified Financials",
-        "dateListed": "2015-06-09",
-        "marketCap": 11593564,
-        "xid": "274180515",
-        "priceChangeFiveDayPercent": -9.999999999999993,
-        "isRecentListing": false
-    }
-];
-const key_stats = {
-    "isin": "AU000000AMP6", "priceAsk": 1.1300000000000001, "priceBid": 1.125, "priceClose": 1.155, "priceDayHigh": 1.17, "priceDayLow": 1.1225, "priceFiftyTwoWeekHigh": 1.22, "priceFiftyTwoWeekLow": 0.855, "volumeAverage": 12240736.197802, "dateExDate": "2020-09-18", "datePayDate": "2020-10-01", "dateRecordDate": "2020-09-21", "dividend": 0.1, "dividendType": "I", "frankingPercent": 100, "cashFlow": 1640, "earningsPerShare": -0.07953, "freeCashFlowYield": -0.0000100000010000001, "priceEarningsRatio": -99999.99, "priceToCash": -99999.99, "foreignExempt": false, "shareDescription": "Ordinary Fully Paid", "numOfShares": 3266105853, "yieldAnnual": 0, "incomeStatement": [{ "revenue": 3081000000, "netIncome": -252000000, "period": "2021A", "fPeriodEndDate": 44561, "curCode": "AUD" }, { "revenue": 3346000000, "netIncome": 177000000, "period": "2020A", "fPeriodEndDate": 44196, "curCode": "AUD" }, { "revenue": 3950000000, "netIncome": -2467000000, "period": "2019A", "fPeriodEndDate": 43830, "curCode": "AUD" }, { "revenue": 8244000000, "netIncome": 28000000, "period": "2018A", "fPeriodEndDate": 43465, "curCode": "AUD" }]
-};
 const str2 = '[{"symbol":"14D","displayName":"1414 DEGREES LIMITED","industry":"Capital Goods","dateListed":"2018-09-12","marketCap":23075953,"xid":"486191506","priceChangeFiveDayPercent":0,"isRecentListing":false},{"symbol":"1ST","displayName":"1ST GROUP LIMITED","industry":"Health Care Equipment & Services","dateListed":"2015-06-09","marketCap":7052863,"xid":"274180515","priceChangeFiveDayPercent":19.760479041916163,"isRecentListing":false},{"symbol":"29M","displayName":"29METALS LIMITED","industry":"Materials","dateListed":"2021-07-02","marketCap":1249183000,"xid":"663303162","priceChangeFiveDayPercent":-1.886792452830182,"isRecentListing":false},{"symbol":"T3D","displayName":"333D LIMITED","industry":"Commercial & Professional Services","dateListed":"2006-12-27","marketCap":8412557,"xid":"5947361","priceChangeFiveDayPercent":0,"isRecentListing":false},{"symbol":"TCF","displayName":"360 CAPITAL ENHANCED INCOME FUND","industry":"Not Applic","dateListed":"2006-10-17","marketCap":23962277,"xid":"5457157","priceChangeFiveDayPercent":-1.0291595197255508,"isRecentListing":false},{"symbol":"TGP","displayName":"360 CAPITAL GROUP","industry":"Real Estate","dateListed":"2005-07-26","marketCap":192717845,"xid":"2524743","priceChangeFiveDayPercent":12.820512820512818,"isRecentListing":false},{"symbol":"TOT","displayName":"360 CAPITAL REIT","industry":"Diversified Financials","dateListed":"2015-04-22","marketCap":135056343,"xid":"86360650","priceChangeFiveDayPercent":10.404624277456655,"isRecentListing":false},{"symbol":"3MF","displayName":"3D METALFORGE LIMITED","industry":"Commercial & Professional Services","dateListed":"2021-03-02","marketCap":18441571,"xid":"636135750","priceChangeFiveDayPercent":7.777777777777785,"isRecentListing":false},{"symbol":"TDO","displayName":"3D OIL LIMITED","industry":"Energy","dateListed":"2007-05-22","marketCap":12729042,"xid":"7221947","priceChangeFiveDayPercent":3.84615384615385,"isRecentListing":false},{"symbol":"DDD","displayName":"3D RESOURCES LIMITED","industry":"Materials","dateListed":"2007-03-21","marketCap":11641116,"xid":"6393494","priceChangeFiveDayPercent":0,"isRecentListing":false},{"symbol":"3PL","displayName":"3P LEARNING LIMITED..","industry":"Consumer Services","dateListed":"2014-07-09","marketCap":458963722,"xid":"76419072","priceChangeFiveDayPercent":2.14723926380369,"isRecentListing":false},{"symbol":"4DX","displayName":"4DMEDICAL LIMITED","industry":"Health Care Equipment & Services","dateListed":"2020-08-07","marketCap":272404949,"xid":"608309060","priceChangeFiveDayPercent":-10.576923076923075,"isRecentListing":false},{"symbol":"4DS","displayName":"4DS MEMORY LIMITED","industry":"Semiconductors & Semiconductor Equipment","dateListed":"2010-12-09","marketCap":124448436,"xid":"26906406","priceChangeFiveDayPercent":8.750000000000007,"isRecentListing":false},{"symbol":"5EA","displayName":"5E ADVANCED MATERIALS INC.","industry":"Materials","marketCap":0,"xid":"688676047","isRecentListing":false},{"symbol":"88E","displayName":"88 ENERGY LIMITED","industry":"Energy","dateListed":"2000-01-20","marketCap":725742734,"xid":"230975","priceChangeFiveDayPercent":20,"isRecentListing":false},{"symbol":"8CO","displayName":"8COMMON LIMITED","industry":"Software & Services","dateListed":"2014-08-27","marketCap":36557360,"xid":"77805543","priceChangeFiveDayPercent":6.451612903225812,"isRecentListing":false},{"symbol":"8IH","displayName":"8I HOLDINGS LTD","industry":"Diversified Financials","dateListed":"2014-12-17","marketCap":64504078,"xid":"80536669","priceChangeFiveDayPercent":5.8823529411764595,"isRecentListing":false},{"symbol":"8VI","displayName":"8VI HOLDINGS LIMITED","industry":"Consumer Services","dateListed":"2015-12-16","marketCap":118667982,"xid":"320037656","priceChangeFiveDayPercent":-8.163265306122442,"isRecentListing":false},{"symbol":"9SP","displayName":"9 SPOKES INTERNATIONAL LIMITED","industry":"Software & Services","dateListed":"2016-06-09","marketCap":11946698,"xid":"350856611","priceChangeFiveDayPercent":0,"isRecentListing":false},{"symbol":"92E","displayName":"92 ENERGY LIMITED","industry":"Energy","dateListed":"2021-04-15","marketCap":40116694,"xid":"648306270","priceChangeFiveDayPercent":9.278350515463925,"isRecentListing":false},{"symbol":"99L","displayName":"99 LOYALTY LIMITED.","industry":"Software & Services","dateListed":"2013-10-08","marketCap":27832386,"xid":"592135903","priceChangeFiveDayPercent":-16.66666666666666,"isRecentListing":false},{"symbol":"ACB","displayName":"A-CAP ENERGY LIMITED","industry":"Energy","dateListed":"2006-05-19","marketCap":183856973,"xid":"4721927","priceChangeFiveDayPercent":-3.3333333333333366,"isRecentListing":false},{"symbol":"AYI","displayName":"A1 INVESTMENTS & RESOURCES LTD","industry":"Diversified Financials","dateListed":"2007-10-02","marketCap":16421946,"xid":"633104981","priceChangeFiveDayPercent":0,"isRecentListing":false},{"symbol":"A2B","displayName":"A2B AUSTRALIA LIMITED","industry":"Transportation","dateListed":"1999-12-14","marketCap":143312513,"xid":"69318","priceChangeFiveDayPercent":-2.5423728813559157,"isRecentListing":false},{"symbol":"ABP","displayName":"ABACUS PROPERTY GROUP","industry":"Real Estate","dateListed":"2002-11-14","marketCap":2878103957,"xid":"37039","priceChangeFiveDayPercent":2.359882005899707,"isRecentListing":false}]';
-// const getJson = (url: string) => {
-//   return request
-//     .get(url)
-//     .accept('application/json')
-//     .ok(res => res.status < 500) // regard any HTTP status code < 500 as success
-//     .then(res => {
-//       return res.text
-//     })
-//     .catch(error => {
-//       return new Error(`${error}`)
-//     })
-// }
 function getJson(url) {
     return __awaiter(this, void 0, void 0, function* () {
         return request
-            .get(url) // get total security count
+            .get(url)
             .accept('application/json')
-            .ok(res => res.status < 500) // regard any HTTP status code < 500 as success
+            .ok(res => res.status < 500) // Any HTTP status codes < 500 as success
             .then(res => {
             return res.text;
         });
@@ -81,6 +33,7 @@ function getCompDir() {
                 + secCount
                 + "&order=ascending&orderBy=companyName&includeFilterOptions=true&recentListingsOnly=false";
         }
+        // Only to get total security count
         const oneSecData = yield getJson(getCompDirUrl(1));
         if (oneSecData) {
             const allSecCount = JSON.parse(oneSecData)["data"]["count"];
@@ -88,19 +41,6 @@ function getCompDir() {
             if (allSecData) {
                 return Promise.resolve(JSON.parse(allSecData)["data"]["items"]);
             }
-            // if (!(oneSecData instanceof Error)) {
-            //   const allSecCount = JSON.parse(oneSecData)["data"]["count"]
-            //   const allSecData = await getJson(getCompDirUrl(allSecCount))
-            //   if (!(allSecData instanceof Error)) {
-            //     return Promise.resolve<compDir>(JSON.parse(allSecData)["data"]["items"])
-            //   } else {
-            //     // console.error("Error in retrieving security count from ASX company directory")
-            //     return Promise.reject<Error>(new Error('Error in retrieving security count from ASX company directory'))
-            //   }
-            // } else {
-            //   // console.error("Error in retrieving data from ASX company directory")
-            //   return Promise.reject<Error>(new Error('Error in retrieving data from ASX company directory'))
-            // }
         }
     });
 }
@@ -109,21 +49,19 @@ function createAsxFiles() {
         // const compDirData = await getCompDir()
         const compDirData = JSON.parse(str2);
         if (compDirData) {
-            //if (!(compDirData instanceof Error)) {
-            // let secAllData: compDir = JSON.parse(JSON.stringify(compDirData)) // deep copy, an independent replica of compDirData
-            let secPerIndustryData = []; // an array of array, so not just compDir but compDir[]
+            let secPerIndustryData = []; // An array of array, so not just compDir but compDir[]
             let secAllData = [];
-            // let secAllData: secDataType[] = []
-            // take out only unique industry names and sort them
+            // Take out only unique industry names and sort them
             const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort();
             const symbolList = compDirData.map((secOrig) => secOrig.symbol);
+            saveAsxJsonFile(compDirData, "comp-dir.json");
             // Once all the sec data gets merged it's hard to separate them into industries, as ALL the object porperties need to be mapped
             // 1. Sparate secs into their industries
             // 2. Fetch extra data from header and keystats
             // 3. Append them to the industryList
             // 4. Pop them into a newly created array, secAllData, keeping the same order
             industryList.forEach((industryName) => {
-                // loop though each industry name, filter all the companies by it, and pop them into an array
+                // Loop though each industry name, filter all the companies by it, and pop them into an array
                 secPerIndustryData.push(compDirData.filter((sec) => { return sec.industry === industryName; }));
             });
             // .forEach loop is SYNCHRONOUS, so use the old-style 'for' loop
@@ -133,12 +71,13 @@ function createAsxFiles() {
                 for (let secCompDir of secPerIndustryData[industryIdx]) {
                     const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol;
                     let mergedSecData = secCompDir;
+                    console.log(secCompDir.symbol);
                     const res = yield Promise.allSettled([getJson(url + "/header"),
                         getJson(url + "/key-statistics")]);
                     res.forEach(result => {
                         if (result.status == "fulfilled") {
-                            // merge into the original data
-                            // somehow only status propery is available to result, so use index assessor i.e. ['value']
+                            // Merge into the original data
+                            // Somehow only status property is available to 'result', so use index assessor i.e. ['value']
                             mergedSecData = Object.assign(mergedSecData, JSON.parse(result["value"])["data"]);
                         }
                     });
@@ -147,99 +86,6 @@ function createAsxFiles() {
                 }
                 saveAsxJsonFile(secListPerIndustry, industryList[industryIdx].split(' ').join('-').toLowerCase() + ".json");
             }
-            // FOREACH IS SYNCHRONOUS!!!
-            // secPerIndustryData.forEach(async (industry, industryIdx) => {
-            //   let secListPerIndustry: Object[] = []
-            //   industry.forEach(async (secCompDir) => {
-            //     const url = process.env.ASX_API_URL_COMP_PREFIX + secCompDir.symbol    
-            //     let mergedSecData: Object = secCompDir
-            //     const res = await Promise.allSettled([getJson(url + process.env.ASX_API_URL_COMP_HEADER_SUFFIX),
-            //                         getJson(url + process.env.ASX_API_URL_COMP_KEY_STATISTICS_SUFFIX)])
-            //     res.forEach(result => {
-            //       if (result.status == "fulfilled") {
-            //       // merge into the original data
-            //       // somehow only status propery is available to result, so use index assessor i.e. ['value']
-            //       mergedSecData = Object.assign(mergedSecData, JSON.parse(result["value"])["data"])
-            //      }
-            //     })
-            //     secListPerIndustry.push(mergedSecData)
-            //     secAllData[symbolList.indexOf(secCompDir.symbol)] = mergedSecData
-            //   })
-            //   await saveAsxJsonFile(secListPerIndustry, industryList[industryIdx].split(' ').join('-').toLowerCase() + ".json")
-            // })
-            // const promiseHeaders: Promise<string>[] =[]
-            // const promisekeyStats: Promise<string>[] = []
-            // promiseHeaders.push(getJson(url + process.env.ASX_API_URL_COMP_HEADER_SUFFIX))
-            // promisekeyStats.push(getJson(url + process.env.ASX_API_URL_COMP_KEY_STATISTICS_SUFFIX))
-            // const headerRes = await Promise.allSettled(promiseHeaders)
-            // const keyStatsRes = await Promise.allSettled(promiseHeaders)
-            // function getSecData(sec: PromiseSettledResult<string>): Object | undefined {
-            //   if ((JSON.parse((sec as unknown) as string))["status"] == "fullfilled") {
-            //     return (JSON.parse((sec as unknown) as string)["value"])["data"]
-            //   } else {
-            //     return undefined
-            //   }
-            // }
-            // let secPerIndustryData: compDir[] = [] // an array of array, so not just compDir but compDir[]
-            // symbolList.forEach((sec) => {
-            //   const url = process.env.ASX_API_URL_COMP_PREFIX + sec    
-            //   promiseHeaders.push(getJson(url + process.env.ASX_API_URL_COMP_HEADER_SUFFIX))
-            //   promisekeyStats.push(getJson(url + process.env.ASX_API_URL_COMP_KEY_STATISTICS_SUFFIX))
-            // industryList.forEach((industryName) => {
-            //   // loop though each industry name, filter all the companies by it, and pop them into an array
-            //   secPerIndustryData.push(compDirData.filter((sec) => { return sec.industry === industryName }))
-            // })
-            // secPerIndustryData.forEach((industry) => {
-            //   let secListPerIndustry: Object[] = []
-            //   async function getExtraData(industry: compDir): Promise<[Object, string]> {
-            //     let mergedDataPerSec: [Object, string] = ['', '']
-            //     industry.forEach((secCompDir) => {
-            //       const url = process.env.ASX_API_URL_COMP_PREFIX
-            //                   + secCompDir.symbol
-            //       const extraSecData = await Promise.allSettled([
-            //                               getJson(url + process.env.ASX_API_URL_COMP_HEADER_SUFFIX),
-            //                               getJson(url + process.env.ASX_API_URL_COMP_KEY_STATISTICS_SUFFIX)])
-            //       // if (!(extraSecData instanceof Error)) {
-            //       //   // [
-            //       //   //   {status: "fulfilled", value: 33},
-            //       //   //   {status: "rejected",  reason: Error: an error}
-            //       //   // ]
-            //       extraSecData.forEach((result) => {
-            //         if (result.status == "fulfilled") {
-            //           // merge into the original data
-            //           // somehow only status propery is available to result, so use index assessor i.e. ['value']
-            //           mergedDataPerSec = [Object.assign(secCompDir, JSON.parse((result["value"] as string))["data"]), secCompDir.symbol]
-            //         }
-            //       })
-            //     })
-            //     return mergedDataPerSec
-            //   }
-            // Object properties are listed (upon merging):
-            // - All integer index keys (stuff like "1123", "55", etc) in ascending numeric order.
-            // - All string keys which are not integer indices, in order of creation (oldest-first). <- MY CASE
-            // - All symbol keys, in order of creation (oldest-first).
-            // mergedDataPerSec = Object.assign(secCompDir,
-            //                                 (!(header instanceof Error))? JSON.parse(header)["data"]: '',
-            //                                 (!(keyStats instanceof Error))? JSON.parse(keyStats)["data"]: '')
-            // if ((!(header instanceof Error)) && (!(keyStats instanceof Error))) {
-            //   mergedDataPerSec = Object.assign(secCompDir, JSON.parse(header), JSON.parse(keyStats))
-            //   // mergedData = { ...secCompDir, ...JSON.parse(header), ...JSON.parse(keyStats)}
-            // } else if (!(header instanceof Error)) {
-            //   mergedDataPerSec = Object.assign(secCompDir, JSON.parse(header))
-            // } else if (!(keyStats instanceof Error)) {
-            //   mergedDataPerSec = Object.assign(secCompDir, JSON.parse(keyStats))
-            // } else {
-            //   mergedDataPerSec = secCompDir
-            // }
-            // secPerIndustryData[industryIdx][secIdx] = mergedData
-            // secListPerIndustry.push(mergedDataPerSec)
-            // This does NOT give error... why?
-            // type res = {
-            //   status: string
-            //   value?: undefined
-            //   reason?: undefined
-            // }
-            saveAsxJsonFile(compDirData, "comp-dir.json");
             saveAsxJsonFile(secAllData, "comp-all-data.json");
         }
         else {
@@ -252,19 +98,17 @@ function saveAsxJsonFile(jsonData, filename) {
         yield writeFile(JSON.stringify(jsonData, null, 2), "/dist/data/", "asx-" + filename);
     });
 }
-createAsxFiles();
-// GLOBAL FUNCTION
 function writeFile(jsonStr, dirName, fileName) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + dirName;
-            // On a local machine this 'undefined' process.env.GITHUB_ACTIONS_ROOT_DIR gives false, while it prints on Github Actions.
-            // No need to set up a secret on Github Actions.
+            // On a local machine this 'undefined' process.env.GITHUB_ACTIONS_ROOT_DIR gives false
+            // This way, no need to set up a secret on Github Actions.
             if (!fs.existsSync(dirName)) {
                 fs.mkdirSync(dirName);
             }
             if (jsonStr.length) {
-                // overwrite the existing file by default
+                // Overwrite the existing file by default
                 const fullName = dirName + fileName;
                 fs.writeFile(fullName, jsonStr, (err) => {
                     if (err) {
@@ -281,4 +125,5 @@ function writeFile(jsonStr, dirName, fileName) {
         }
     });
 }
+createAsxFiles();
 //# sourceMappingURL=asx.js.map
