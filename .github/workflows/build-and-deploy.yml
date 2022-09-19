@@ -1,9 +1,10 @@
 name: Peer Analysis
-on: [push]
+on: # [push]
 # on:
 #   # https://crontab.guru ““At 22:00 on every day-of-week from Sunday through Thursday.”
 #   schedule:
 #     - cron: "0 22 * * 0-4"
+  workflow_dispatch: # For being able to manually click 'Run Workflow' button on Github Actions
 jobs:
   ASX-Data-Loader:
     runs-on: ubuntu-latest # Look for a lighter image?

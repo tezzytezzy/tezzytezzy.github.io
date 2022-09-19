@@ -142,4 +142,20 @@ async function writeFile(jsonStr: string, dirName: string, fileName: string) {
   }
 }
 
+async function setLastUpdate() {
+  try {
+    const lastUpdated = document.getElementById('last_updated') as HTMLParagraphElement
+
+    // TRIED THEESE BELOW
+    // lastUpdated!.innerHTML
+    // lastUpdated!.innerText
+    lastUpdated.textContent = "Last Updated:" +
+      new Date().toLocaleString('en-AU',
+        { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' })
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 createAsxFiles()
+setLastUpdate()
