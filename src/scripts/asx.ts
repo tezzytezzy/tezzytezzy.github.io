@@ -10,103 +10,6 @@ import fs from 'fs'
 
 config()
 
-const str_test = [
-  {
-    "symbol": "AMP",
-    "displayName": "AMP LIMITED",
-    "industry": "Diversified Financials",
-    "dateListed": "1998-06-15",
-    "marketCap": 3772352260,
-    "xid": "44817",
-    "priceChangeFiveDayPercent": -3.0042918454935554,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "1ST",
-    "displayName": "1ST GROUP LIMITED",
-    "industry": "Health Care Equipment & Services",
-    "dateListed": "2015-06-09",
-    "marketCap": 11593564,
-    "xid": "274180515",
-    "priceChangeFiveDayPercent": -9.999999999999993,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "2ST",
-    "displayName": "2ST GROUP LIMITED",
-    "industry": "Diversified Financials",
-    "dateListed": "2015-06-09",
-    "marketCap": 11593564,
-    "xid": "274180515",
-    "priceChangeFiveDayPercent": -9.999999999999993,
-    "isRecentListing": false
-  }]
-
-
-const key_stats = {
-  "isin": "AU000000AMP6", "priceAsk": 1.1300000000000001, "priceBid": 1.125, "priceClose": 1.155, "priceDayHigh": 1.17, "priceDayLow": 1.1225, "priceFiftyTwoWeekHigh": 1.22, "priceFiftyTwoWeekLow": 0.855, "volumeAverage": 12240736.197802, "dateExDate": "2020-09-18", "datePayDate": "2020-10-01", "dateRecordDate": "2020-09-21", "dividend": 0.1, "dividendType": "I", "frankingPercent": 100, "cashFlow": 1640, "earningsPerShare": -0.07953, "freeCashFlowYield": -0.0000100000010000001, "priceEarningsRatio": -99999.99, "priceToCash": -99999.99, "foreignExempt": false, "shareDescription": "Ordinary Fully Paid", "numOfShares": 3266105853, "yieldAnnual": 0, "incomeStatement": [{ "revenue": 3081000000, "netIncome": -252000000, "period": "2021A", "fPeriodEndDate": 44561, "curCode": "AUD" }, { "revenue": 3346000000, "netIncome": 177000000, "period": "2020A", "fPeriodEndDate": 44196, "curCode": "AUD" }, { "revenue": 3950000000, "netIncome": -2467000000, "period": "2019A", "fPeriodEndDate": 43830, "curCode": "AUD" }, { "revenue": 8244000000, "netIncome": 28000000, "period": "2018A", "fPeriodEndDate": 43465, "curCode": "AUD" }]
-}
-
-// 1. Use Company Directory to get all the listed securities
-// 2. Establish a list of industries to categorise each security under its belonging industry
-
-// interface Security {
-//   symbol: string // header
-//   marketCap: number // header
-//   priceChangeFiveDayPercent: number // SAME AS priceChangePercent IN HEADER???
-//   displayName: string // header
-//   industry: string // header
-//   dateListed: string // header
-//   xid: string // header
-//   isRecentListing: boolean
-// }
-
-// 3. Append data to the original properties from Company Directory
-// 3.1. https://asx.api.markitdigital.com/asx-research/1.0/companies/bhp/header
-// {"data":{"dateListed":"1885-08-13",
-//         "displayName":"BHP GROUP LIMITED",
-//         "priceAsk":40.74,
-//         "priceBid":40.730000000000004,
-//         "priceChange":1.8100000000000023,
-//         "priceChangePercent":4.650565262076059,
-//         "priceLast":40.730000000000004,
-//         "sector":"Materials",
-//         "industryGroup":"Materials",
-//         "securityType":1,
-//         "symbol":"BHP",
-//         "volume":8096299,
-//         "xid":"60947",
-//         "marketCap":197025618555,
-//         "statusCode":""}
-// }
-// 3.2. https://asx.api.markitdigital.com/asx-research/1.0/companies/bhp/key-statistics
-// {"data":{"isin":"AU000000BHP4",
-//         "priceAsk":40.74,
-//         "priceBid":40.730000000000004,
-//         "priceClose":38.92,
-//         "priceDayHigh":41.050000000000004,
-//         "priceDayLow":39.7,
-//         "priceFiftyTwoWeekHigh":53.92,
-//         "priceFiftyTwoWeekLow":35.56,
-//         "volumeAverage":10491864.674157,
-//         "dateExDate":"2022-02-24",
-//         "datePayDate":"2022-03-28",
-//         "dateRecordDate":"2022-02-25",
-//         "dividend":2.0806,
-//         "dividendType":"I",
-//         "frankingPercent":100,
-//         "cashFlow":13778.04,
-//         "earningsPerShare":4.51268,
-//         "freeCashFlowYield":0.1823400057619442,
-//         "priceEarningsRatio":8.4872,
-//         "priceToCash":5.48426,
-//         "foreignExempt":false,
-//         "shareDescription":"Ordinary Fully Paid",
-//         "numOfShares":5062323190,
-//         "yieldAnnual":10.997167138810198,
-//         "incomeStatement":[{"revenue":56921000000,"netIncome":11304000000,"period":"2021A","fPeriodEndDate":44377,"curCode":"USD"},{"revenue":42931000000,"netIncome":7956000000,"period":"2020A","fPeriodEndDate":44012,"curCode":"USD"},{"revenue":44288000000,"netIncome":8306000000,"period":"2019A","fPeriodEndDate":43646,"curCode":"USD"},{"revenue":43129000000,"netIncome":3705000000,"period":"2018A","fPeriodEndDate":43281,"curCode":"USD"}]}}
-
-
 type security = {
   symbol: string
   marketCap: number
@@ -154,8 +57,8 @@ async function getCompDir() {
 }
 
 async function createAsxFiles() {
-  const compDirData = await getCompDir()
-  // const compDirData: compDir = JSON.parse(str2)
+  // const compDirData = await getCompDir()
+  const compDirData: compDir = JSON.parse(str2)
   if (compDirData) {
     let secPerIndustryData: compDir[] = [] // An array of array, so not just compDir but compDir[]
     let secAllData: Object[] = []
@@ -163,6 +66,8 @@ async function createAsxFiles() {
     // Take out only unique industry names and sort them
     const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort()
     const symbolList = compDirData.map((secOrig) => secOrig.symbol)
+
+    saveAsxJsonFile(compDirData, "comp-dir.json")
 
     // Once all the sec data gets merged it's hard to separate them into industries, as ALL the object porperties need to be mapped
     // 1. Sparate secs into their industries
@@ -178,20 +83,22 @@ async function createAsxFiles() {
     // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
     for (let industryIdx in secPerIndustryData) {
       let secListPerIndustry: Object[] = []
-       
+
       for (let secCompDir of secPerIndustryData[industryIdx]) {
-        const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol   
+        const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol
         let mergedSecData: Object = secCompDir
 
+        console.log(secCompDir.symbol)
+
         const res = await Promise.allSettled([getJson(url + "/header"),
-                            getJson(url + "/key-statistics")])
+        getJson(url + "/key-statistics")])
 
         res.forEach(result => {
           if (result.status == "fulfilled") {
-          // Merge into the original data
-          // Somehow only status property is available to 'result', so use index assessor i.e. ['value']
-          mergedSecData = Object.assign(mergedSecData, JSON.parse(result["value"])["data"])
-         }
+            // Merge into the original data
+            // Somehow only status property is available to 'result', so use index assessor i.e. ['value']
+            mergedSecData = Object.assign(mergedSecData, JSON.parse(result["value"])["data"])
+          }
         })
 
         secListPerIndustry.push(mergedSecData)
@@ -201,8 +108,7 @@ async function createAsxFiles() {
 
       saveAsxJsonFile(secListPerIndustry, industryList[industryIdx].split(' ').join('-').toLowerCase() + ".json")
     }
-   
-    saveAsxJsonFile(compDirData, "comp-dir.json")
+
     saveAsxJsonFile(secAllData, "comp-all-data.json")
   } else {
     console.error("No data")
@@ -211,8 +117,8 @@ async function createAsxFiles() {
 
 async function saveAsxJsonFile(jsonData: Object[], filename: string) {
   await writeFile(JSON.stringify(jsonData, null, 2),
-            "/dist/data/",
-            "asx-" + filename)
+    "/dist/data/",
+    "asx-" + filename)
 }
 
 async function writeFile(jsonStr: string, dirName: string, fileName: string) {
@@ -224,7 +130,7 @@ async function writeFile(jsonStr: string, dirName: string, fileName: string) {
     if (!fs.existsSync(dirName)) { fs.mkdirSync(dirName) }
 
     if (jsonStr.length) {
-      // overwrite the existing file by default
+      // Overwrite the existing file by default
       const fullName = dirName + fileName
 
       fs.writeFile(fullName, jsonStr, (err: any) => {
