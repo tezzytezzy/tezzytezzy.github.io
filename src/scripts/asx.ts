@@ -60,7 +60,8 @@ async function createAsxFiles() {
     let secAllData: Object[] = []
 
     // Take out only unique industry names and sort them
-    const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort()
+    const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort()    
+
     const symbolList = compDirData.map((secOrig) => secOrig.symbol)
 
     saveAsxJsonFile(compDirData, "comp-dir.json")
@@ -102,7 +103,26 @@ async function createAsxFiles() {
         secAllData[symbolList.indexOf(secCompDir.symbol)] = mergedSecData
       }
 
-      saveAsxJsonFile(secListPerIndustry, industryList[industryIdx].split(' ').join('-').toLowerCase() + ".json")
+      function getIndustryFileName(industryName:string): string {
+        // industryList inlcudes 'undefined' after sorted
+        // (27) ['Automobiles & Components', 'Banks', 'Capital Goods', 'Class Pend', 'Commercial & Professional Services', 
+        //       'Consumer Durables & Apparel', 'Consumer Services', 'Diversified Financials', 'Energy', 
+        //       'Food & Staples Retailing', 'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
+        //       'Household & Personal Products', 'Insurance', 'Materials', 'Media & Entertainment', 'Not Applic',
+        //       'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate', 'Retailing', 
+        //       'Semiconductors & Semiconductor Equipment', 'Software & Services', 'Technology Hardware & Equipment',
+        //       'Telecommunication Services', 'Transportation', 'Utilities', undefined]
+        // Securities below with 'undefined' industry
+        // 26: (3) [{…}, {…}, {…}]
+        // 0: {symbol: 'FND', displayName: 'FINDI LIMITED', marketCap: 10103445, xid: '591676895', priceChangeFiveDayPercent: -11.111111111111109, …}
+        // 1: {symbol: 'HLF', displayName: 'HALO FOOD CO. LIMITED', marketCap: 20038487, xid: '479285162', priceChangeFiveDayPercent: 0, …}
+        // 2: {symbol: '1CG', displayName: 'UUV AQUABOTIX LTD', xid: '403789822', priceChangeFiveDayPercent: 0, isRecentListing: false}
+
+        industryName = (industryName === 'undefined')? "Not Classified" : industryName
+        return industryName.split(' ').join('-').toLowerCase() + ".json"
+      }
+
+      saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
     }
 
     saveAsxJsonFile(secAllData, "comp-all-data.json")
