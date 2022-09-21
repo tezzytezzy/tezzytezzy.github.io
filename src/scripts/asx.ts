@@ -64,7 +64,7 @@ async function createAsxFiles() {
 
     const symbolList = compDirData.map((secOrig) => secOrig.symbol)
 
-    saveAsxJsonFile(compDirData, "comp-dir.json")
+    saveAsxJsonFile(compDirData, "comp-basic-data")
 
     // Once all the sec data gets merged it's hard to separate them into industries, as ALL the object porperties need to be mapped
     // 1. Sparate secs into their industries
@@ -80,6 +80,12 @@ async function createAsxFiles() {
     // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
     for (let industryIdx in secPerIndustryData) {
       let secListPerIndustry: Object[] = []
+
+      if (industryList[industryIdx] == "Materials") {
+        // The Materials industry includes over 800 securityies in it
+        // The below pauses code execution by 30 seconds to clear memory before shooting 800+ API requests
+        return new Promise(resolve, setTimeOut(resolve, 30000))
+      }
 
       for (let secCompDir of secPerIndustryData[industryIdx]) {
         const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol
@@ -103,7 +109,9 @@ async function createAsxFiles() {
         secAllData[symbolList.indexOf(secCompDir.symbol)] = mergedSecData
       }
 
-      function getIndustryFileName(industryName:string): string {
+      function getIndustryFileName(industryName: string): string {
+      	// Use '??', nullish coalescing operator. True when 'null' or 'undefined'
+        
         // industryList inlcudes 'undefined' after sorted
         // (27) ['Automobiles & Components', 'Banks', 'Capital Goods', 'Class Pend', 'Commercial & Professional Services', 
         //       'Consumer Durables & Apparel', 'Consumer Services', 'Diversified Financials', 'Energy', 
@@ -112,20 +120,19 @@ async function createAsxFiles() {
         //       'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate', 'Retailing', 
         //       'Semiconductors & Semiconductor Equipment', 'Software & Services', 'Technology Hardware & Equipment',
         //       'Telecommunication Services', 'Transportation', 'Utilities', undefined]
-        // Securities below with 'undefined' industry
+        // E.g. securities below with 'undefined' industry
         // 26: (3) [{…}, {…}, {…}]
         // 0: {symbol: 'FND', displayName: 'FINDI LIMITED', marketCap: 10103445, xid: '591676895', priceChangeFiveDayPercent: -11.111111111111109, …}
         // 1: {symbol: 'HLF', displayName: 'HALO FOOD CO. LIMITED', marketCap: 20038487, xid: '479285162', priceChangeFiveDayPercent: 0, …}
         // 2: {symbol: '1CG', displayName: 'UUV AQUABOTIX LTD', xid: '403789822', priceChangeFiveDayPercent: 0, isRecentListing: false}
-
-        industryName = (industryName === 'undefined')? "Not Classified" : industryName
-        return industryName.split(' ').join('-').toLowerCase() + ".json"
+        return (industryName??"Not Classified").split(' ').join('-').toLowerCase() + ".json"
       }
-
+      
       saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
     }
 
-    saveAsxJsonFile(secAllData, "comp-all-data.json")
+    await saveAsxJsonFile(secAllData, "comp-full-data.json")
+    setLastUpdate()
   } else {
     console.error("No data")
   }
@@ -178,4 +185,3 @@ async function setLastUpdate() {
 }
 
 createAsxFiles()
-setLastUpdate()
