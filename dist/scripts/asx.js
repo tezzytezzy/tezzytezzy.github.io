@@ -44,8 +44,8 @@ function getCompDir() {
 }
 function createAsxFiles() {
     return __awaiter(this, void 0, void 0, function* () {
-        // const compDirData = await getCompDir()
-        const compDirData = JSON.parse(str2);
+        const compDirData = yield getCompDir();
+        // const compDirData: compDir = JSON.parse(str2)
         if (compDirData) {
             let secPerIndustryData = []; // An array of array, so not just compDir but compDir[]
             let secAllData = [];
