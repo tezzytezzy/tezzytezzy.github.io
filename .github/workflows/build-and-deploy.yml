@@ -44,9 +44,9 @@ jobs:
         run: |
           timedatectl
       - name: Setup timezone
-          uses: zcong1993/setup-timezone@master
-          with:
-            timezone: Australia/Sydney
+        uses: zcong1993/setup-timezone@master
+        with:
+          timezone: Australia/Sydney
       - name: Output default
         run: |
           timedatectl
