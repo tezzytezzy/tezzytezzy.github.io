@@ -25,28 +25,28 @@ jobs:
           # npm ERR! npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
           # npm ERR! later to generate a package-lock.json file, then try again.
           npm ci
-      # - name: Copy all non-TS files in 'src' folder to 'dist' folder
-      #   run: npm run prevscodedebug
-      # - name: Transpile to js files
-      #   run: |
-      #     npm run vscodedebug
-      # - name: Create ASX data files 
-      #   run: |
-      #     node ./dist/scripts/asx.js
-      # - name: Commit to the repo
-      #   run: |
-      #     git config --global user.name "${{ env.CI_COMMIT }}"
-      #     git config --global user.email "username@users.noreply.github.com"
-      #     git add .
-      #     git commit -a -m "${{ env.CI_COMMIT }}" --allow-empty
-      #     git push
-      - name: Output default
+      - name: Copy all non-TS files in 'src' folder to 'dist' folder
+        run: npm run prevscodedebug
+      - name: Transpile to js files
         run: |
-          timedatectl
-      - name: Setup timezone
-        uses: zcong1993/setup-timezone@master
-        with:
-          timezone: Australia/Sydney
-      - name: Output default
+          npm run vscodedebug
+      - name: Create ASX data files 
         run: |
-          timedatectl
+          node ./dist/scripts/asx.js
+      - name: Commit to the repo
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT }}"
+          git config --global user.email "username@users.noreply.github.com"
+          git add .
+          git commit -a -m "${{ env.CI_COMMIT }}" --allow-empty
+          git push
+      # - name: Output default
+      #   run: |
+      #     timedatectl
+      # - name: Setup timezone
+      #   uses: zcong1993/setup-timezone@master
+      #   with:
+      #     timezone: Australia/Sydney
+      # - name: Output default
+      #   run: |
+      #     timedatectl
