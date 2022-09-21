@@ -84,7 +84,7 @@ async function createAsxFiles() {
       if (industryList[industryIdx] == "Materials") {
         // The Materials industry includes over 800 securityies in it
         // The below pauses code execution by 30 seconds to clear memory before shooting 800+ API requests
-        return new Promise(resolve, setTimeOut(resolve, 30000))
+        return new Promise(resolve => setTimeout(resolve, 30000))
       }
 
       for (let secCompDir of secPerIndustryData[industryIdx]) {
