@@ -80,12 +80,7 @@ async function createAsxFiles() {
     // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
     for (let industryIdx in secPerIndustryData) {
       let secListPerIndustry: Object[] = []
-
-      if (industryList[industryIdx] == "Materials") {
-        // The Materials industry includes over 800 securityies in it
-        // The below pauses code execution by 30 seconds to clear memory before shooting 800+ API requests
-        return new Promise(resolve => setTimeout(resolve, 30000))
-      }
+      let secCounter = 0
 
       for (let secCompDir of secPerIndustryData[industryIdx]) {
         const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol
@@ -107,6 +102,13 @@ async function createAsxFiles() {
         secListPerIndustry.push(mergedSecData)
 
         secAllData[symbolList.indexOf(secCompDir.symbol)] = mergedSecData
+
+        // Add 2-second stoppage at every 50th security, so as not to overwhelm memory
+        if (secCounter % 50 == 0) {
+          await new Promise(resolve => setTimeout(resolve, 2000))
+        }
+        
+        secCounter += 1        
       }
 
       function getIndustryFileName(industryName: string): string {
@@ -128,11 +130,11 @@ async function createAsxFiles() {
         return (industryName??"Not Classified").split(' ').join('-').toLowerCase() + ".json"
       }
       
-      saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
+      await saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
     }
 
     await saveAsxJsonFile(secAllData, "comp-full-data.json")
-    setLastUpdate()
+    await setLastUpdate()
   } else {
     console.error("No data")
   }
@@ -144,7 +146,7 @@ async function saveAsxJsonFile(jsonData: Object[], filename: string) {
     "asx-" + filename)
 }
 
-async function writeFile(jsonStr: string, dirName: string, fileName: string) {
+async function writeFile(str: string, dirName: string, fileName: string) {
   try {
     dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + dirName
     // On a local machine this 'undefined' process.env.GITHUB_ACTIONS_ROOT_DIR gives false
@@ -152,17 +154,17 @@ async function writeFile(jsonStr: string, dirName: string, fileName: string) {
 
     if (!fs.existsSync(dirName)) { fs.mkdirSync(dirName) }
 
-    if (jsonStr.length) {
-      // Overwrite the existing file by default
+    if (str.length) {
+      // overwrite the existing file by default
       const fullName = dirName + fileName
 
-      fs.writeFile(fullName, jsonStr, (err: any) => {
+      fs.writeFile(fullName, str, (err: any) => {
         if (err) {
           throw new Error(`Error in saving ${fullName}`)
         }
       })
     } else {
-      throw new Error(`Empty data from ${jsonStr}}`)
+      throw new Error(`Empty data from ${str}}`)
     }
   } catch (err) {
     console.error(err)
