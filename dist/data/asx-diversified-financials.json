@@ -2685,36 +2685,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 162107104,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 9278630,
-        "netIncome": 3290440,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 4957310,
-        "netIncome": 1268750,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1705160,
-        "netIncome": -535100,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1938750,
-        "netIncome": -1071940,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "FSA",
@@ -4893,6 +4864,7 @@
     "industryGroup": "Diversified Financials",
     "securityType": 1,
     "volume": 253431,
+    "upcomingEventName": "AGM",
     "statusCode": "",
     "isin": "AU0000067647",
     "priceClose": 0.20500000000000002,

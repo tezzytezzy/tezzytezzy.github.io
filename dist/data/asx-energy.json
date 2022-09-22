@@ -1406,6 +1406,13 @@
     "yieldAnnual": 0,
     "incomeStatement": [
       {
+        "revenue": 15000,
+        "netIncome": -1495000,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
         "revenue": 17000,
         "netIncome": -995000,
         "period": "2021A",
@@ -1424,13 +1431,6 @@
         "netIncome": -5880000,
         "period": "2019A",
         "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 54000,
-        "netIncome": -1577000,
-        "period": "2018A",
-        "fPeriodEndDate": 43281,
         "curCode": "AUD"
       }
     ]
@@ -3574,6 +3574,13 @@
     "incomeStatement": [
       {
         "revenue": 0,
+        "netIncome": 80415990,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 0,
         "netIncome": 16844550,
         "period": "2021A",
         "fPeriodEndDate": 44377,
@@ -3588,16 +3595,9 @@
       },
       {
         "revenue": 0,
-        "netIncome": -18849990,
+        "netIncome": -19469350,
         "period": "2019A",
         "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 0,
-        "netIncome": -10240340,
-        "period": "2018A",
-        "fPeriodEndDate": 43281,
         "curCode": "AUD"
       }
     ]
@@ -5746,6 +5746,13 @@
     "yieldAnnual": 13.961038961038962,
     "incomeStatement": [
       {
+        "revenue": 2552395000,
+        "netIncome": 983009000,
+        "period": "2022A",
+        "fPeriodEndDate": 44773,
+        "curCode": "AUD"
+      },
+      {
         "revenue": 1042378000,
         "netIncome": 79350000,
         "period": "2021A",
@@ -5764,13 +5771,6 @@
         "netIncome": 210652000,
         "period": "2019A",
         "fPeriodEndDate": 43677,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1078439000,
-        "netIncome": 149498000,
-        "period": "2018A",
-        "fPeriodEndDate": 43312,
         "curCode": "AUD"
       }
     ]
@@ -6841,8 +6841,8 @@
         "curCode": "AUD"
       },
       {
-        "revenue": 77380,
-        "netIncome": -2390120,
+        "revenue": 80060,
+        "netIncome": -2473000,
         "period": "2018A",
         "fPeriodEndDate": 43281,
         "curCode": "AUD"
@@ -8166,6 +8166,13 @@
     "yieldAnnual": 0,
     "incomeStatement": [
       {
+        "revenue": 10,
+        "netIncome": -4329120,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
         "revenue": 480,
         "netIncome": -2054240,
         "period": "2021A",
@@ -8184,13 +8191,6 @@
         "netIncome": -3216700,
         "period": "2019A",
         "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 880,
-        "netIncome": -2810730,
-        "period": "2018A",
-        "fPeriodEndDate": 43281,
         "curCode": "AUD"
       }
     ]

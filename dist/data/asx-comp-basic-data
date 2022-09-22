@@ -5128,16 +5128,6 @@
     "isRecentListing": false
   },
   {
-    "symbol": "CIO",
-    "displayName": "CONNECTED IO LIMITED",
-    "industry": "Technology Hardware & Equipment",
-    "dateListed": "1984-08-16",
-    "marketCap": "N/A",
-    "xid": "669623901",
-    "priceChangeFiveDayPercent": 0,
-    "isRecentListing": false
-  },
-  {
     "symbol": "CXZ",
     "displayName": "CONNEXION TELEMATICS LTD",
     "industry": "Software & Services",
@@ -19737,7 +19727,7 @@
     "symbol": "VBS",
     "displayName": "VECTUS BIOSYSTEMS LIMITED",
     "industry": "Pharmaceuticals, Biotechnology & Life Sciences",
-    "dateListed": "2016-02-23",
+    "dateListed": "2016-07-13",
     "marketCap": 24441846,
     "xid": "321033767",
     "priceChangeFiveDayPercent": -11.999999999999995,
@@ -20459,7 +20449,7 @@
     "industry": "Materials",
     "dateListed": "2006-06-07",
     "marketCap": 21045395,
-    "xid": "4802238",
+    "xid": "728646352",
     "priceChangeFiveDayPercent": 2.7777777777777803,
     "isRecentListing": false
   },
@@ -21031,6 +21021,14 @@
     "marketCap": 9909462,
     "xid": "25307377",
     "priceChangeFiveDayPercent": -5.000000000000004,
+    "isRecentListing": false
+  },
+  {
+    "symbol": "CIO",
+    "industry": "Technology Hardware & Equipment",
+    "dateListed": "1984-08-16",
+    "xid": "669623901",
+    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   }
 ]

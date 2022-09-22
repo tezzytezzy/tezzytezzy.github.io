@@ -66,11 +66,7 @@ function createAsxFiles() {
             // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
             for (let industryIdx in secPerIndustryData) {
                 let secListPerIndustry = [];
-                if (industryList[industryIdx] == "Materials") {
-                    // The Materials industry includes over 800 securityies in it
-                    // The below pauses code execution by 30 seconds to clear memory before shooting 800+ API requests
-                    return new Promise(resolve => setTimeout(resolve, 30000));
-                }
+                let secCounter = 0;
                 for (let secCompDir of secPerIndustryData[industryIdx]) {
                     const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol;
                     let mergedSecData = secCompDir;
@@ -86,6 +82,11 @@ function createAsxFiles() {
                     });
                     secListPerIndustry.push(mergedSecData);
                     secAllData[symbolList.indexOf(secCompDir.symbol)] = mergedSecData;
+                    // Add 2-second stoppage at every 50th security, so as not to overwhelm memory
+                    if (secCounter % 50 == 0) {
+                        yield new Promise(resolve => setTimeout(resolve, 2000));
+                    }
+                    secCounter += 1;
                 }
                 function getIndustryFileName(industryName) {
                     // Use '??', nullish coalescing operator. True when 'null' or 'undefined'
@@ -104,10 +105,10 @@ function createAsxFiles() {
                     // 2: {symbol: '1CG', displayName: 'UUV AQUABOTIX LTD', xid: '403789822', priceChangeFiveDayPercent: 0, isRecentListing: false}
                     return (industryName !== null && industryName !== void 0 ? industryName : "Not Classified").split(' ').join('-').toLowerCase() + ".json";
                 }
-                saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]));
+                yield saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]));
             }
             yield saveAsxJsonFile(secAllData, "comp-full-data.json");
-            setLastUpdate();
+            yield setLastUpdate();
         }
         else {
             console.error("No data");
@@ -119,7 +120,7 @@ function saveAsxJsonFile(jsonData, filename) {
         yield writeFile(JSON.stringify(jsonData, null, 2), "/dist/data/", "asx-" + filename);
     });
 }
-function writeFile(jsonStr, dirName, fileName) {
+function writeFile(str, dirName, fileName) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + dirName;
@@ -128,17 +129,17 @@ function writeFile(jsonStr, dirName, fileName) {
             if (!fs.existsSync(dirName)) {
                 fs.mkdirSync(dirName);
             }
-            if (jsonStr.length) {
-                // Overwrite the existing file by default
+            if (str.length) {
+                // overwrite the existing file by default
                 const fullName = dirName + fileName;
-                fs.writeFile(fullName, jsonStr, (err) => {
+                fs.writeFile(fullName, str, (err) => {
                     if (err) {
                         throw new Error(`Error in saving ${fullName}`);
                     }
                 });
             }
             else {
-                throw new Error(`Empty data from ${jsonStr}}`);
+                throw new Error(`Empty data from ${str}}`);
             }
         }
         catch (err) {

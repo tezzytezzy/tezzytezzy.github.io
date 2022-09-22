@@ -2051,6 +2051,8 @@
     "statusCode": "XD",
     "isin": "AU0000186678",
     "priceClose": 5.47,
+    "priceDayHigh": 5.495,
+    "priceDayLow": 5.3,
     "priceFiftyTwoWeekHigh": 9.34,
     "priceFiftyTwoWeekLow": 5.21,
     "volumeAverage": 562526.574468,
@@ -2508,7 +2510,7 @@
     "displayName": "POINTSBET HOLDINGS LIMITED",
     "industry": "Consumer Services",
     "dateListed": "2019-06-12",
-    "marketCap": 641926469,
+    "marketCap": 641834880,
     "xid": "538365188",
     "priceChangeFiveDayPercent": -7.239819004524893,
     "isRecentListing": false,
@@ -2536,7 +2538,7 @@
     "priceToCash": -99999.99,
     "foreignExempt": false,
     "shareDescription": "Ordinary Fully Paid",
-    "numOfShares": 305679271,
+    "numOfShares": 305635657,
     "yieldAnnual": 0,
     "incomeStatement": [
       {

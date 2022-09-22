@@ -614,7 +614,51 @@
     "industryGroup": "Health Care Equipment & Services",
     "securityType": 1,
     "volume": 0,
-    "statusCode": ""
+    "statusCode": "",
+    "isin": "AU0000182412",
+    "priceClose": 0.65,
+    "priceFiftyTwoWeekHigh": 1.75,
+    "priceFiftyTwoWeekLow": 0.32,
+    "volumeAverage": 48452.453488,
+    "cashFlow": -16.031,
+    "earningsPerShare": -0.27918,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 78382590,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 0,
+        "netIncome": -17155000,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 0,
+        "netIncome": -4079770,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 0,
+        "netIncome": -1353900,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 0,
+        "netIncome": -145670,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "AJJ",
@@ -3522,7 +3566,53 @@
     "industryGroup": "Health Care Equipment & Services",
     "securityType": 1,
     "volume": 784865,
-    "statusCode": ""
+    "statusCode": "",
+    "isin": "AU000000MX15",
+    "priceClose": 0.17,
+    "priceDayHigh": 0.18,
+    "priceDayLow": 0.165,
+    "priceFiftyTwoWeekHigh": 0.35,
+    "priceFiftyTwoWeekLow": 0.11,
+    "volumeAverage": 522293.06383,
+    "cashFlow": -19.22,
+    "earningsPerShare": -0.03713,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 461504991,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 13114000,
+        "netIncome": -17089000,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 6783000,
+        "netIncome": -14731000,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 7555000,
+        "netIncome": -10067000,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 5313000,
+        "netIncome": -9834000,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "MAP",
@@ -5426,7 +5516,59 @@
     "industryGroup": "Health Care Equipment & Services",
     "securityType": 1,
     "volume": 1259094,
-    "statusCode": ""
+    "statusCode": "",
+    "isin": "AU000000SHL7",
+    "priceClose": 30.52,
+    "priceDayHigh": 30.53,
+    "priceDayLow": 30.04,
+    "priceFiftyTwoWeekHigh": 46.95,
+    "priceFiftyTwoWeekLow": 30.04,
+    "volumeAverage": 1095383.021277,
+    "dateExDate": "2022-09-06",
+    "datePayDate": "2022-09-21",
+    "dateRecordDate": "2022-09-07",
+    "dividend": 0.6,
+    "dividendType": "F",
+    "frankingPercent": 100,
+    "cashFlow": 1391.835,
+    "earningsPerShare": 3.02331,
+    "freeCashFlowYield": 0.14933664661573293,
+    "priceEarningsRatio": 10.0949,
+    "priceToCash": 6.69628,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 480693313,
+    "yieldAnnual": 3.2981530343007917,
+    "incomeStatement": [
+      {
+        "revenue": 9340154000,
+        "netIncome": 1460566000,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 8754123000,
+        "netIncome": 1315040000,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 6831843000,
+        "netIncome": 527749000,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 6133671000,
+        "netIncome": 549725000,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "SNZ",
