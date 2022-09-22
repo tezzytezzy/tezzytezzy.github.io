@@ -60,11 +60,11 @@ async function createAsxFiles() {
     let secAllData: Object[] = []
 
     // Take out only unique industry names and sort them
-    const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort()    
+    const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort()
 
     const symbolList = compDirData.map((secOrig) => secOrig.symbol)
 
-    saveAsxJsonFile(compDirData, "comp-basic-data")
+    saveAsxJsonFile(compDirData, "comp-basic-data.json")
 
     // Once all the sec data gets merged it's hard to separate them into industries, as ALL the object porperties need to be mapped
     // 1. Sparate secs into their industries
@@ -107,13 +107,13 @@ async function createAsxFiles() {
         if (secCounter % 50 == 0) {
           await new Promise(resolve => setTimeout(resolve, 2000))
         }
-        
-        secCounter += 1        
+
+        secCounter += 1
       }
 
       function getIndustryFileName(industryName: string): string {
-      	// Use '??', nullish coalescing operator. True when 'null' or 'undefined'
-        
+        // Use '??', nullish coalescing operator. True when 'null' or 'undefined'
+
         // industryList inlcudes 'undefined' after sorted
         // (27) ['Automobiles & Components', 'Banks', 'Capital Goods', 'Class Pend', 'Commercial & Professional Services', 
         //       'Consumer Durables & Apparel', 'Consumer Services', 'Diversified Financials', 'Energy', 
@@ -127,14 +127,15 @@ async function createAsxFiles() {
         // 0: {symbol: 'FND', displayName: 'FINDI LIMITED', marketCap: 10103445, xid: '591676895', priceChangeFiveDayPercent: -11.111111111111109, …}
         // 1: {symbol: 'HLF', displayName: 'HALO FOOD CO. LIMITED', marketCap: 20038487, xid: '479285162', priceChangeFiveDayPercent: 0, …}
         // 2: {symbol: '1CG', displayName: 'UUV AQUABOTIX LTD', xid: '403789822', priceChangeFiveDayPercent: 0, isRecentListing: false}
-        return (industryName??"Not Classified").split(' ').join('-').toLowerCase() + ".json"
+        return (industryName ?? "Not Classified").split(' ').join('-').toLowerCase() + ".json"
       }
-      
+
       await saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
     }
 
     await saveAsxJsonFile(secAllData, "comp-full-data.json")
-    await setLastUpdate()
+    await saveAsxJsonFile(null, (new Date().toLocaleString('en-AU',
+      { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' })) + ".lastupdate")
   } else {
     console.error("No data")
   }
@@ -171,19 +172,19 @@ async function writeFile(str: string, dirName: string, fileName: string) {
   }
 }
 
-async function setLastUpdate() {
-  try {
-    const lastUpdated = document.getElementById('last_updated') as HTMLParagraphElement
+// async function setLastUpdate() {
+//   try {
+//     const lastUpdated = document.getElementById('last_updated') as HTMLParagraphElement
 
-    // TRIED THEESE BELOW
-    // lastUpdated!.innerHTML
-    // lastUpdated!.innerText
-    lastUpdated.textContent = "Last Updated:" +
-      new Date().toLocaleString('en-AU',
-        { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' })
-  } catch (err) {
-    console.error(err);
-  }
-}
+//     // TRIED THEESE BELOW
+//     // lastUpdated!.innerHTML
+//     // lastUpdated!.innerText
+//     lastUpdated.textContent = "Last Updated:" +
+//       new Date().toLocaleString('en-AU',
+//         { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' })
+//   } catch (err) {
+//     console.error(err);
+//   }
+// }
 
 createAsxFiles()
