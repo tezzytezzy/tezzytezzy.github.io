@@ -295,9 +295,10 @@
 
   <script>
     function getTimestamp() {
-      return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/lastupdate.log")
+      // Tried .innerHTML and .innerText
+      return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/asx-lastupdate.log")
         .then(function (response) { response.text(); })
-        .then(function (text) { document.getElementById("lastupdate").innerHTML = "Last updated @" + text; });
+        .then(function (text) { document.getElementById("lastupdate").textContent = "Last updated @" + text; });
     }
     getTimestamp();
   </script>

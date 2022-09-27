@@ -64,7 +64,7 @@ async function createAsxFiles() {
 
     const symbolList = compDirData.map((secOrig) => secOrig.symbol)
 
-    saveAsxJsonFile(compDirData, "comp-basic-data.json")
+    writeAsxFile(compDirData, "comp-basic-data.json")
 
     // Once all the sec data gets merged it's hard to separate them into industries, as ALL the object porperties need to be mapped
     // 1. Sparate secs into their industries
@@ -130,34 +130,30 @@ async function createAsxFiles() {
         return (industryName ?? "Not Classified").split(' ').join('-').toLowerCase() + ".json"
       }
 
-      await saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
+      await writeAsxFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
     }
 
-    await saveAsxJsonFile(secAllData, "comp-full-data.json")
-    await saveAsxJsonFile(null, (new Date().toLocaleString('en-AU',
-      { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' })) + ".lastupdate")
+    await writeAsxFile(secAllData, "comp-full-data.json")
+    await writeAsxFile(new Date().toLocaleString('en-AU',
+      { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' }), "lastupdate.log")
   } else {
     console.error("No data")
   }
 }
 
-async function saveAsxJsonFile(jsonData: Object[], filename: string) {
-  await writeFile(JSON.stringify(jsonData, null, 2),
-    "/dist/data/",
-    "asx-" + filename)
-}
-
-async function writeFile(str: string, dirName: string, fileName: string) {
+async function writeAsxFile(data: Object[] | string, fileName: string) {
   try {
-    dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + dirName
+    dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + "/dist/data/"
     // On a local machine this 'undefined' process.env.GITHUB_ACTIONS_ROOT_DIR gives false
     // This way, no need to set up a secret on Github Actions.
 
     if (!fs.existsSync(dirName)) { fs.mkdirSync(dirName) }
 
+    str = JSON.stringify(data, null, 2)
+
     if (str.length) {
       // overwrite the existing file by default
-      const fullName = dirName + fileName
+      const fullName = dirName + "asx-" + filename
 
       fs.writeFile(fullName, str, (err: any) => {
         if (err) {
@@ -171,20 +167,3 @@ async function writeFile(str: string, dirName: string, fileName: string) {
     console.error(err)
   }
 }
-
-// async function setLastUpdate() {
-//   try {
-//     const lastUpdated = document.getElementById('last_updated') as HTMLParagraphElement
-
-//     // TRIED THEESE BELOW
-//     // lastUpdated!.innerHTML
-//     // lastUpdated!.innerText
-//     lastUpdated.textContent = "Last Updated:" +
-//       new Date().toLocaleString('en-AU',
-//         { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' })
-//   } catch (err) {
-//     console.error(err);
-//   }
-// }
-
-createAsxFiles()
