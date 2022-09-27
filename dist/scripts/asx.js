@@ -52,7 +52,7 @@ function createAsxFiles() {
             // Take out only unique industry names and sort them
             const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort();
             const symbolList = compDirData.map((secOrig) => secOrig.symbol);
-            saveAsxJsonFile(compDirData, "comp-basic-data");
+            writeAsxFile(compDirData, "comp-basic-data.json");
             // Once all the sec data gets merged it's hard to separate them into industries, as ALL the object porperties need to be mapped
             // 1. Sparate secs into their industries
             // 2. Fetch extra data from header and keystats
@@ -105,33 +105,29 @@ function createAsxFiles() {
                     // 2: {symbol: '1CG', displayName: 'UUV AQUABOTIX LTD', xid: '403789822', priceChangeFiveDayPercent: 0, isRecentListing: false}
                     return (industryName !== null && industryName !== void 0 ? industryName : "Not Classified").split(' ').join('-').toLowerCase() + ".json";
                 }
-                yield saveAsxJsonFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]));
+                yield writeAsxFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]));
             }
-            yield saveAsxJsonFile(secAllData, "comp-full-data.json");
-            yield setLastUpdate();
+            yield writeAsxFile(secAllData, "comp-full-data.json");
+            yield writeAsxFile(new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' }), "lastupdate.log");
         }
         else {
             console.error("No data");
         }
     });
 }
-function saveAsxJsonFile(jsonData, filename) {
-    return __awaiter(this, void 0, void 0, function* () {
-        yield writeFile(JSON.stringify(jsonData, null, 2), "/dist/data/", "asx-" + filename);
-    });
-}
-function writeFile(str, dirName, fileName) {
+function writeAsxFile(data, fileName) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + dirName;
+            const str = JSON.stringify(data, null, 2);
+            const dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + "/dist/data/";
             // On a local machine this 'undefined' process.env.GITHUB_ACTIONS_ROOT_DIR gives false
             // This way, no need to set up a secret on Github Actions.
             if (!fs.existsSync(dirName)) {
                 fs.mkdirSync(dirName);
             }
+            const fullName = dirName + "asx-" + fileName;
             if (str.length) {
                 // overwrite the existing file by default
-                const fullName = dirName + fileName;
                 fs.writeFile(fullName, str, (err) => {
                     if (err) {
                         throw new Error(`Error in saving ${fullName}`);
@@ -139,7 +135,7 @@ function writeFile(str, dirName, fileName) {
                 });
             }
             else {
-                throw new Error(`Empty data from ${str}}`);
+                throw new Error(`Empty data in ${fullName}}`);
             }
         }
         catch (err) {
@@ -147,20 +143,4 @@ function writeFile(str, dirName, fileName) {
         }
     });
 }
-function setLastUpdate() {
-    return __awaiter(this, void 0, void 0, function* () {
-        try {
-            const lastUpdated = document.getElementById('last_updated');
-            // TRIED THEESE BELOW
-            // lastUpdated!.innerHTML
-            // lastUpdated!.innerText
-            lastUpdated.textContent = "Last Updated:" +
-                new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney', dateStyle: 'full', timeStyle: 'long' });
-        }
-        catch (err) {
-            console.error(err);
-        }
-    });
-}
-createAsxFiles();
 //# sourceMappingURL=asx.js.map

@@ -21,19 +21,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="scripts/sbscripts.js"></script>
-  <script>
-    var formElement = document.getElementById("contact-form-id");
-    var buttonElement = document.getElementById("button-id");
-    formElement.addEventListener("botpoison-challenge-start", function () {
-      buttonElement.setAttribute("disabled", "disabled");
-    });
-    formElement.addEventListener("botpoison-challenge-success", function () {
-      buttonElement.removeAttribute("disabled");
-    });
-    formElement.addEventListener("botpoison-challenge-error", function () {
-      buttonElement.removeAttribute("disabled");
-    });
-  </script>
 </head>
 
 <body id="page-top">
@@ -289,7 +276,8 @@
             <div class="form-group">
               <!-- This label tag needs to be there for submit-form.com to work-->
               <label for="message"></label>
-              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
+              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"
+                required></textarea>
             </div>
             <button id="button-id" type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -300,9 +288,47 @@
   <!-- Copyright Section-->
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-        <p id="last-updated"><i></i></p>
-        Copyright &copy; ASX Data Bank 2022
+      <p id="lastupdate"><i></i></p>
+      Copyright &copy; ASX Data Bank 2022
     </div>
   </div>
+
+  <script>
+    function getTimestamp() {
+      // Tried .innerHTML and .innerText
+      return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/asx-lastupdate.log")
+        .then(function (response) { response.text(); })
+        .then(function (text) { document.getElementById("lastupdate").textContent = "Last updated @" + text; });
+    }
+    getTimestamp();
+  </script>
+  <script>
+    var formElement = document.getElementById("contact-form-id");
+    var buttonElement = document.getElementById("button-id");
+    formElement.addEventListener("botpoison-challenge-start", function () {
+      buttonElement.setAttribute("disabled", "disabled");
+    });
+    formElement.addEventListener("botpoison-challenge-success", function () {
+      buttonElement.removeAttribute("disabled");
+    });
+    formElement.addEventListener("botpoison-challenge-error", function () {
+      buttonElement.removeAttribute("disabled");
+    });
+  </script>
+
+  <!-- Default Statcounter code for asx https://tezzytezzy.github.io/index.html -->
+  <script type="text/javascript">
+    var sc_project = 12787337;
+    var sc_invisible = 1;
+    var sc_security = "b000caf8"; 
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/12787337/0/b000caf8/1/" alt="Web Analytics"
+          referrerPolicy="no-referrer-when-downgrade"></a></div>
+  </noscript>
+  <!-- End of Statcounter Code -->
 </body>
+
 </html>
