@@ -143,25 +143,24 @@ async function createAsxFiles() {
 
 async function writeAsxFile(data: Object[] | string, fileName: string) {
   try {
-    dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + "/dist/data/"
+    const str = JSON.stringify(data, null, 2)
+    const dirName = (process.env.GITHUB_ACTIONS_ROOT_DIR || process.cwd()) + "/dist/data/"
     // On a local machine this 'undefined' process.env.GITHUB_ACTIONS_ROOT_DIR gives false
     // This way, no need to set up a secret on Github Actions.
 
     if (!fs.existsSync(dirName)) { fs.mkdirSync(dirName) }
 
-    str = JSON.stringify(data, null, 2)
+    const fullName = dirName + "asx-" + fileName
 
     if (str.length) {
       // overwrite the existing file by default
-      const fullName = dirName + "asx-" + filename
-
       fs.writeFile(fullName, str, (err: any) => {
         if (err) {
           throw new Error(`Error in saving ${fullName}`)
         }
       })
     } else {
-      throw new Error(`Empty data from ${str}}`)
+      throw new Error(`Empty data in ${fullName}}`)
     }
   } catch (err) {
     console.error(err)
