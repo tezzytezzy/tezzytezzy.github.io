@@ -21,19 +21,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="scripts/sbscripts.js"></script>
-  <script>
-    var formElement = document.getElementById("contact-form-id");
-    var buttonElement = document.getElementById("button-id");
-    formElement.addEventListener("botpoison-challenge-start", function () {
-      buttonElement.setAttribute("disabled", "disabled");
-    });
-    formElement.addEventListener("botpoison-challenge-success", function () {
-      buttonElement.removeAttribute("disabled");
-    });
-    formElement.addEventListener("botpoison-challenge-error", function () {
-      buttonElement.removeAttribute("disabled");
-    });
-  </script>
 </head>
 
 <body id="page-top">
@@ -301,10 +288,32 @@
   <!-- Copyright Section-->
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <p id="last-updated"><i></i></p>
+      <p id="lastupdate"><i></i></p>
       Copyright &copy; ASX Data Bank 2022
     </div>
   </div>
+
+  <script>
+    function getTimestamp() {
+      return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/lastupdate.log")
+        .then(function (response) { response.text(); })
+        .then(function (text) { document.getElementById("lastupdate").innerHTML = "Last updated @" + text; });
+    }
+    getTimestamp();
+  </script>
+  <script>
+    var formElement = document.getElementById("contact-form-id");
+    var buttonElement = document.getElementById("button-id");
+    formElement.addEventListener("botpoison-challenge-start", function () {
+      buttonElement.setAttribute("disabled", "disabled");
+    });
+    formElement.addEventListener("botpoison-challenge-success", function () {
+      buttonElement.removeAttribute("disabled");
+    });
+    formElement.addEventListener("botpoison-challenge-error", function () {
+      buttonElement.removeAttribute("disabled");
+    });
+  </script>
 
   <!-- Default Statcounter code for asx https://tezzytezzy.github.io/index.html -->
   <script type="text/javascript">
