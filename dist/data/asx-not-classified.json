@@ -1,0 +1,65 @@
+[
+  {
+    "symbol": "HLF",
+    "displayName": "HALO FOOD CO. LIMITED",
+    "marketCap": 18435408,
+    "xid": "479285162",
+    "priceChangeFiveDayPercent": -6.000000000000005,
+    "isRecentListing": false,
+    "priceAsk": 0.047,
+    "priceBid": 0.045,
+    "priceChange": 0.0010000000000000009,
+    "priceChangePercent": 2.173913043478263,
+    "priceLast": 0.047,
+    "sector": "Consumer Staples",
+    "industryGroup": "Food, Beverage & Tobacco",
+    "securityType": 1,
+    "volume": 1,
+    "statusCode": "",
+    "isin": "AU0000186702",
+    "priceClose": 0.046,
+    "priceDayHigh": 0.047,
+    "priceDayLow": 0.047,
+    "priceFiftyTwoWeekHigh": 0.155,
+    "priceFiftyTwoWeekLow": 0.0445,
+    "volumeAverage": 639076.5,
+    "cashFlow": -5.43069,
+    "earningsPerShare": -0.02677,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 400769743,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 60145480,
+        "netIncome": -7467650,
+        "period": "2022A",
+        "fPeriodEndDate": 44651,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 50843760,
+        "netIncome": -8195480,
+        "period": "2021A",
+        "fPeriodEndDate": 44286,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 22732900,
+        "netIncome": -7452320,
+        "period": "2020A",
+        "fPeriodEndDate": 43921,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2676520,
+        "netIncome": -3290370,
+        "period": "2019A",
+        "fPeriodEndDate": 43555,
+        "curCode": "AUD"
+      }
+    ]
+  }
+]

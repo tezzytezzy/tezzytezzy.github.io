@@ -66,11 +66,10 @@ function createAsxFiles() {
             // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
             for (let industryIdx in secPerIndustryData) {
                 let secListPerIndustry = [];
-                let secCounter = 0;
+                let secCounter = 1;
                 for (let secCompDir of secPerIndustryData[industryIdx]) {
                     const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol;
                     let mergedSecData = secCompDir;
-                    console.log(secCompDir.symbol);
                     const res = yield Promise.allSettled([getJson(url + "/header"),
                         getJson(url + "/key-statistics")]);
                     res.forEach(result => {
@@ -86,6 +85,7 @@ function createAsxFiles() {
                     if (secCounter % 50 == 0) {
                         yield new Promise(resolve => setTimeout(resolve, 2000));
                     }
+                    console.log(secCounter + ": " + secCompDir.symbol);
                     secCounter += 1;
                 }
                 function getIndustryFileName(industryName) {
@@ -143,4 +143,5 @@ function writeAsxFile(data, fileName) {
         }
     });
 }
+createAsxFiles();
 //# sourceMappingURL=asx.js.map
