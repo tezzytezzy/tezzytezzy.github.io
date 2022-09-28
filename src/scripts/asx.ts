@@ -80,13 +80,11 @@ async function createAsxFiles() {
     // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
     for (let industryIdx in secPerIndustryData) {
       let secListPerIndustry: Object[] = []
-      let secCounter = 0
+      let secCounter = 1
 
       for (let secCompDir of secPerIndustryData[industryIdx]) {
         const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol
         let mergedSecData: Object = secCompDir
-
-        console.log(secCompDir.symbol)
 
         const res = await Promise.allSettled([getJson(url + "/header"),
         getJson(url + "/key-statistics")])
@@ -108,6 +106,7 @@ async function createAsxFiles() {
           await new Promise(resolve => setTimeout(resolve, 2000))
         }
 
+        console.log(secCounter + ": " + secCompDir.symbol)
         secCounter += 1
       }
 
@@ -166,3 +165,5 @@ async function writeAsxFile(data: Object[] | string, fileName: string) {
     console.error(err)
   }
 }
+
+createAsxFiles()
