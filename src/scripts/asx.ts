@@ -56,6 +56,7 @@ async function createAsxFiles() {
     let secPerIndustryData: compDir[] = [] // An array of array, so not just compDir but compDir[]
     let secAllData: Object[] = []
     let secTotalCounter = 1
+    let secIndsutryCounter = 1
 
     // Take out only unique industry names and sort them
     const industryList = Array.from(new Set(compDirData.map((sec) => sec.industry))).sort()
@@ -74,11 +75,18 @@ async function createAsxFiles() {
       secPerIndustryData.push(compDirData.filter((sec) => { return sec.industry === industryName }))
     })
 
+    // Output in Github Actions
+    function padWithZeros(num: number): string {
+      // Return a 4-digit number. A negative number does nothing with .substring()
+      return ('000' + num.toString()).slice(-4)
+    }
+
     // .forEach loop is SYNCHRONOUS, so use the old-style 'for' loop
     // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
     for (let industryIdx in secPerIndustryData) {
       let secListPerIndustry: Object[] = []
-      let secIndsutryCounter = 1
+
+      industryCounter = padWithZeros(secIndsutryCounter)
 
       console.log(secPerIndustryData[industryIdx] + "(" + industryIdx + " of " + secPerIndustryData.length + ")")
 
@@ -106,14 +114,8 @@ async function createAsxFiles() {
           await new Promise(resolve => setTimeout(resolve, 2000))
         }
 
-        function padWithZeros(num: number): string {
-          // Return a 4-digit number. A negative number does nothing with .substring()
-          return ('000' + num.toString()).slice(-4)
-        }
-
-        console.log(padWithZeros(secTotalCounter) + ":" + padWithZeros(secIndsutryCounter) + ": " + secCompDir.symbol)
+        console.log(padWithZeros(secTotalCounter) + ":" + industryCounter + ": " + secCompDir.symbol)
         secTotalCounter += 1
-        secIndsutryCounter += 1
       }
 
       function getIndustryFileName(industryName: string): string {
@@ -136,6 +138,7 @@ async function createAsxFiles() {
       }
 
       await writeAsxFile(secListPerIndustry, getIndustryFileName(industryList[industryIdx]))
+      secIndsutryCounter += 1
     }
 
     await writeAsxFile(secAllData, "comp-full-data.json")
