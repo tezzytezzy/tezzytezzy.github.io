@@ -1,13 +1,13 @@
 name: Peer Analysis
-on: # [push]
-# on:
-#   # https://crontab.guru ““At 22:00 on every day-of-week from Sunday through Thursday.”
-#   schedule:
-#     - cron: "0 22 * * 0-4"
+on:
+  schedule:
+    # https://crontab.guru ““At 22:00/23:00 on every day-of-week from Sunday through Thursday.”
+    # Github Actions runs on UTC. AEST is UTC + 10 (non-Daylight Saving) / 11 (Daylight Saving)
+    - cron: "0 12 * * 0-4"
   workflow_dispatch: # For being able to manually click 'Run Workflow' button on Github Actions
 jobs:
   ASX-Data-Loader:
-    runs-on: ubuntu-latest # Look for a lighter image?
+    runs-on: ubuntu-latest
     env: 
       CI_COMMIT: Github Actions CI
       GITHUB_ACTIONS_ROOT_DIR: ${{ github.workspace }}
@@ -40,13 +40,3 @@ jobs:
           git add .
           git commit -a -m "${{ env.CI_COMMIT }}" --allow-empty
           git push
-      # - name: Output default
-      #   run: |
-      #     timedatectl
-      # - name: Setup timezone
-      #   uses: zcong1993/setup-timezone@master
-      #   with:
-      #     timezone: Australia/Sydney
-      # - name: Output default
-      #   run: |
-      #     timedatectl
