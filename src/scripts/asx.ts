@@ -85,8 +85,7 @@ async function createAsxFiles() {
     // NOT: secPerIndustryData.forEach(async (industry, industryIdx) => {
     for (let industryIdx in secPerIndustryData) {
       let secListPerIndustry: Object[] = []
-
-      industryCounter = padWithZeros(secIndsutryCounter)
+      const industryCounter = padWithZeros(secIndsutryCounter)
 
       console.log(secPerIndustryData[industryIdx] + "(" + industryIdx + " of " + secPerIndustryData.length + ")")
 
