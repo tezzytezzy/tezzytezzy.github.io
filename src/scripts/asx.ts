@@ -87,7 +87,7 @@ async function createAsxFiles() {
       let secListPerIndustry: Object[] = []
       const industryCounter = padWithZeros(secIndsutryCounter)
 
-      console.log(industryList[industryIdx] + "(" + industryIdx + " of " + secPerIndustryData.length + ")")
+      console.log(industryList[industryIdx] + "(" + (parseInt(industryIdx) + 1) + " of " + secPerIndustryData.length + ")")
 
       for (let secCompDir of secPerIndustryData[industryIdx]) {
         const url = "https://asx.api.markitdigital.com/asx-research/1.0/companies/" + secCompDir.symbol
