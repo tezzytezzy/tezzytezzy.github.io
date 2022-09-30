@@ -1,8 +1,9 @@
 name: Peer Analysis
 on:
   schedule:
-    # https://crontab.guru ““At 22:00/23:00 on every day-of-week from Sunday through Thursday.”
     # Github Actions runs on UTC. AEST is UTC + 10 (non-Daylight Saving) / 11 (Daylight Saving)
+    # https://crontab.guru
+    # “At 12:00 + 10:00/11:00 = 22:00/23:00 (AEST) on every day-of-week from Sunday through Thursday.”
     - cron: "0 12 * * 0-4"
   workflow_dispatch: # For being able to manually click 'Run Workflow' button on Github Actions
 jobs:
@@ -38,5 +39,5 @@ jobs:
           git config --global user.name "${{ env.CI_COMMIT }}"
           git config --global user.email "username@users.noreply.github.com"
           git add .
-          git commit -a -m "${{ env.CI_COMMIT }}" --allow-empty
+          git commit -a -m "Pre-Market Data Fetch" --allow-empty
           git push
