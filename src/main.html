@@ -296,11 +296,14 @@
   <script>
     function getTimestamp() {
       // Tried .innerHTML and .innerText
-      return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/asx-lastupdate.log", { mode: 'same-origin' })
+      return fetch("tezzytezzy.github.io/dist/data/asx-lastupdate.log")
+        // return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/asx-lastupdate.log", { mode: 'same-origin' })
         .then(function (response) { response.text(); })
-        .then(function (text) { document.getElementById("lastupdate").textContent = "Last updated @" + text; });
+        .catch(function (error) { error; });
+      // .then(function (text) { document.getElementById("lastupdate").textContent = "Last updated @" + text; });
     }
-    getTimestamp();
+
+    document.getElementById("lastupdate").textContent = "Last updated @" + await getTimestamp();
   </script>
   <script>
     var formElement = document.getElementById("contact-form-id");
