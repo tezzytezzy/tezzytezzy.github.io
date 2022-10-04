@@ -6,7 +6,7 @@ Simply select any hyperlink (*right*-click if you are right-handed) to bring up 
 
 # Data
 ## Schedule
-> Direct API calls to the Exchange by `cron` are scheduled at either 22:00 or 23:00 (AEST) from Sunday through Thursday, dependent on Australian Daylight Saving Time (UTC + 10 or 11). The job runs irrespective of the day being a public holiday or not.
+> Direct API calls to the Exchange by `cron` are scheduled at either 22:00 or 23:00 (AEST) from Sunday through Thursday, dependent on Australian Daylight Saving Time (UTC + 10 or 11). The job always runs each of those days irrespective of trading or non-trading day (e.g. public holiday).
 
 ## Completion 
 > It creates **asx-lastupdate.log** in the **./dist/data/** folder (as well as all the JSON files). This file contains completion time in one-line text. Github Actions queue scheduled jobs and kick them off with no guaranteed starting time. Typically, the JSON files are created under 20 minutes and within 40 minutes from the scheduled kick-off time. 
