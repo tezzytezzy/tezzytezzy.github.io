@@ -294,16 +294,15 @@
   </div>
 
   <script>
-    function getTimestamp() {
-      // Tried .innerHTML and .innerText
-      return fetch("tezzytezzy.github.io/dist/data/asx-lastupdate.log")
-        // return fetch("https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/data/asx-lastupdate.log", { mode: 'same-origin' })
-        .then(function (response) { response.text(); })
-        .catch(function (error) { error; });
-      // .then(function (text) { document.getElementById("lastupdate").textContent = "Last updated @" + text; });
+    async function getTimestamp() {
+      const tsText = await fetch("tezzytezzy.github.io/dist/data/asx-lastupdate.log")
+        .then(function (response) { return response.text(); })
+        .catch(function () { return ""; });
+
+      document.getElementById("lastupdate").textContent = tsText ? ("Last updated @ " + tsText) : "";
     }
 
-    document.getElementById("lastupdate").textContent = "Last updated @" + await getTimestamp();
+    getTimestamp();
   </script>
   <script>
     var formElement = document.getElementById("contact-form-id");
