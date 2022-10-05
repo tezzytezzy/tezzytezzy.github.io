@@ -295,7 +295,7 @@
 
   <script>
     async function getTimestamp() {
-      const tsText = await fetch("tezzytezzy.github.io/dist/data/asx-lastupdate.log")
+      const tsText = await fetch("https://tezzytezzy.github.io/dist/data/asx-lastupdate.log")
         .then(function (response) { return response.text(); })
         .catch(function () { return ""; });
 
