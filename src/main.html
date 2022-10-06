@@ -294,6 +294,8 @@
   </div>
 
   <script>
+    // To get around the CORS problem, use the same root URL of this mail.html AND the log
+    // "https://tezzytezzy.github.io/dist/...", not "https://github.com/tezzytezzy/tezzytezzy.github.io/blob/main/dist/..."
     async function getTimestamp() {
       const tsText = await fetch("https://tezzytezzy.github.io/dist/data/asx-lastupdate.log")
         .then(function (response) { return response.text(); })
