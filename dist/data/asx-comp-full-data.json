@@ -28513,7 +28513,7 @@
     "priceDayLow": 0.007,
     "priceFiftyTwoWeekHigh": 0.0281,
     "priceFiftyTwoWeekLow": 0.00678,
-    "volumeAverage": 841077.015422,
+    "volumeAverage": 849326.298962,
     "cashFlow": -2.78352,
     "earningsPerShare": -0.00361,
     "freeCashFlowYield": -0.0000100000010000001,
@@ -33582,6 +33582,67 @@
       {
         "revenue": 22620,
         "netIncome": -468500,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  },
+  {
+    "symbol": "CIO",
+    "displayName": "CONNECTED IO LIMITED",
+    "industry": "Technology Hardware & Equipment",
+    "dateListed": "1984-08-16",
+    "marketCap": -1,
+    "xid": "584514079",
+    "priceChangeFiveDayPercent": 0,
+    "isRecentListing": false,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 0.018,
+    "securityType": 1,
+    "volume": 117279,
+    "statusCode": "",
+    "isin": "AU000000CIO3",
+    "priceClose": 0.018,
+    "priceDayHigh": 0.018,
+    "priceDayLow": 0.018,
+    "priceFiftyTwoWeekHigh": 0.057,
+    "priceFiftyTwoWeekLow": 0.016,
+    "volumeAverage": 307863.0833333333,
+    "cashFlow": -1.65548,
+    "earningsPerShare": -0.00344,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 317919465,
+    "incomeStatement": [
+      {
+        "revenue": 904070,
+        "netIncome": -984470,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 1196710,
+        "netIncome": -5692740,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 3818830,
+        "netIncome": -2392820,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2601340,
+        "netIncome": -1999970,
         "period": "2019A",
         "fPeriodEndDate": 43646,
         "curCode": "AUD"
@@ -50297,36 +50358,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 1181243221,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 109081980,
-        "netIncome": -42226020,
-        "period": "2021A",
-        "fPeriodEndDate": 44561,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 20338620,
-        "netIncome": 114320,
-        "period": "2020A",
-        "fPeriodEndDate": 44196,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 58800,
-        "netIncome": -3504280,
-        "period": "2019A",
-        "fPeriodEndDate": 43830,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 52570,
-        "netIncome": -4067680,
-        "period": "2018A",
-        "fPeriodEndDate": 43465,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "FTL",
@@ -69036,36 +69068,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 129989343,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 18138930,
-        "netIncome": -17464680,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2607130,
-        "netIncome": -6931630,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 510200,
-        "netIncome": -2036470,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 39250,
-        "netIncome": -1655520,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "KLR",
@@ -71752,6 +71755,7 @@
     "isRecentListing": false,
     "priceAsk": 0.012,
     "priceBid": 0.011,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.012,
     "sector": "Materials",
@@ -84051,36 +84055,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 726963482,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 15619000,
-        "netIncome": -459000,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 16543000,
-        "netIncome": -139000,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 16652000,
-        "netIncome": -298000,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 15288000,
-        "netIncome": -735000,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "MOB",
@@ -89627,9 +89602,7 @@
     "priceChangeFiveDayPercent": -1.3799448022078986,
     "isRecentListing": false,
     "priceAsk": 10.75,
-    "priceBid": 10.65,
-    "priceChange": 0.040000000000000924,
-    "priceChangePercent": 0.3745318352060012,
+    "priceChangePercent": 0,
     "priceLast": 10.72,
     "sector": "Consumer Discretionary",
     "industryGroup": "Retailing",
@@ -89637,6 +89610,7 @@
     "volume": 93754,
     "statusCode": "",
     "isin": "AU000000NCK1",
+    "priceBid": 10.65,
     "priceClose": 10.68,
     "priceDayHigh": 10.77,
     "priceDayLow": 10.47,
@@ -136592,6 +136566,8 @@
     "statusCode": "",
     "isin": "AU000000XAM0",
     "priceClose": 0.03,
+    "priceDayHigh": 0.03,
+    "priceDayLow": 0.028,
     "priceFiftyTwoWeekHigh": 0.042,
     "priceFiftyTwoWeekLow": 0.022,
     "volumeAverage": 973414.538462,
@@ -138422,65 +138398,6 @@
       {
         "revenue": 37070,
         "netIncome": -1735990,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
-  },
-  {
-    "symbol": "CIO",
-    "industry": "Technology Hardware & Equipment",
-    "dateListed": "1984-08-16",
-    "xid": "669623901",
-    "priceChangeFiveDayPercent": 0,
-    "isRecentListing": false,
-    "displayName": "CONNECTED IO LIMITED",
-    "priceChange": 0,
-    "priceChangePercent": 0,
-    "priceLast": 0.018000000000000002,
-    "securityType": 1,
-    "volume": 0,
-    "marketCap": -1,
-    "statusCode": "",
-    "isin": "AU000000CIO3",
-    "priceClose": 0.018000000000000002,
-    "priceFiftyTwoWeekHigh": 0.057,
-    "priceFiftyTwoWeekLow": 0.016,
-    "cashFlow": -1.65548,
-    "earningsPerShare": -0.00344,
-    "freeCashFlowYield": -0.0000100000010000001,
-    "priceEarningsRatio": -99999.99,
-    "priceToCash": -99999.99,
-    "foreignExempt": false,
-    "shareDescription": "Ordinary Fully Paid",
-    "numOfShares": 317919465,
-    "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 904070,
-        "netIncome": -984470,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1196710,
-        "netIncome": -5692740,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 3818830,
-        "netIncome": -2392820,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2601340,
-        "netIncome": -1999970,
         "period": "2019A",
         "fPeriodEndDate": 43646,
         "curCode": "AUD"

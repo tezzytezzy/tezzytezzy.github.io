@@ -2013,36 +2013,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 129989343,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 18138930,
-        "netIncome": -17464680,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2607130,
-        "netIncome": -6931630,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 510200,
-        "netIncome": -2036470,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 39250,
-        "netIncome": -1655520,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "KMD",
@@ -2767,9 +2738,7 @@
     "priceChangeFiveDayPercent": -1.3799448022078986,
     "isRecentListing": false,
     "priceAsk": 10.75,
-    "priceBid": 10.65,
-    "priceChange": 0.040000000000000924,
-    "priceChangePercent": 0.3745318352060012,
+    "priceChangePercent": 0,
     "priceLast": 10.72,
     "sector": "Consumer Discretionary",
     "industryGroup": "Retailing",
@@ -2777,6 +2746,7 @@
     "volume": 93754,
     "statusCode": "",
     "isin": "AU000000NCK1",
+    "priceBid": 10.65,
     "priceClose": 10.68,
     "priceDayHigh": 10.77,
     "priceDayLow": 10.47,

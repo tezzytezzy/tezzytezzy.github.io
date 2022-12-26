@@ -614,6 +614,67 @@
     ]
   },
   {
+    "symbol": "CIO",
+    "displayName": "CONNECTED IO LIMITED",
+    "industry": "Technology Hardware & Equipment",
+    "dateListed": "1984-08-16",
+    "marketCap": -1,
+    "xid": "584514079",
+    "priceChangeFiveDayPercent": 0,
+    "isRecentListing": false,
+    "priceChange": 0,
+    "priceChangePercent": 0,
+    "priceLast": 0.018,
+    "securityType": 1,
+    "volume": 117279,
+    "statusCode": "",
+    "isin": "AU000000CIO3",
+    "priceClose": 0.018,
+    "priceDayHigh": 0.018,
+    "priceDayLow": 0.018,
+    "priceFiftyTwoWeekHigh": 0.057,
+    "priceFiftyTwoWeekLow": 0.016,
+    "volumeAverage": 307863.0833333333,
+    "cashFlow": -1.65548,
+    "earningsPerShare": -0.00344,
+    "freeCashFlowYield": -0.0000100000010000001,
+    "priceEarningsRatio": -99999.99,
+    "priceToCash": -99999.99,
+    "foreignExempt": false,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 317919465,
+    "incomeStatement": [
+      {
+        "revenue": 904070,
+        "netIncome": -984470,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 1196710,
+        "netIncome": -5692740,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 3818830,
+        "netIncome": -2392820,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2601340,
+        "netIncome": -1999970,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
+  },
+  {
     "symbol": "CT1",
     "displayName": "CONSTELLATION TECHNOLOGIES LIMITED",
     "industry": "Technology Hardware & Equipment",
@@ -2131,65 +2192,6 @@
       {
         "revenue": 121370,
         "netIncome": -5206760,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
-  },
-  {
-    "symbol": "CIO",
-    "industry": "Technology Hardware & Equipment",
-    "dateListed": "1984-08-16",
-    "xid": "669623901",
-    "priceChangeFiveDayPercent": 0,
-    "isRecentListing": false,
-    "displayName": "CONNECTED IO LIMITED",
-    "priceChange": 0,
-    "priceChangePercent": 0,
-    "priceLast": 0.018000000000000002,
-    "securityType": 1,
-    "volume": 0,
-    "marketCap": -1,
-    "statusCode": "",
-    "isin": "AU000000CIO3",
-    "priceClose": 0.018000000000000002,
-    "priceFiftyTwoWeekHigh": 0.057,
-    "priceFiftyTwoWeekLow": 0.016,
-    "cashFlow": -1.65548,
-    "earningsPerShare": -0.00344,
-    "freeCashFlowYield": -0.0000100000010000001,
-    "priceEarningsRatio": -99999.99,
-    "priceToCash": -99999.99,
-    "foreignExempt": false,
-    "shareDescription": "Ordinary Fully Paid",
-    "numOfShares": 317919465,
-    "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 904070,
-        "netIncome": -984470,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1196710,
-        "netIncome": -5692740,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 3818830,
-        "netIncome": -2392820,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2601340,
-        "netIncome": -1999970,
         "period": "2019A",
         "fPeriodEndDate": 43646,
         "curCode": "AUD"

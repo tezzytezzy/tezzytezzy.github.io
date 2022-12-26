@@ -5088,6 +5088,16 @@
     "isRecentListing": false
   },
   {
+    "symbol": "CIO",
+    "displayName": "CONNECTED IO LIMITED",
+    "industry": "Technology Hardware & Equipment",
+    "dateListed": "1984-08-16",
+    "marketCap": "N/A",
+    "xid": "669623901",
+    "priceChangeFiveDayPercent": 0,
+    "isRecentListing": false
+  },
+  {
     "symbol": "CXZ",
     "displayName": "CONNEXION TELEMATICS LTD",
     "industry": "Software & Services",
@@ -20445,7 +20455,7 @@
     "industry": "Materials",
     "dateListed": "2006-06-07",
     "marketCap": 19937743,
-    "xid": "728646352",
+    "xid": "4802238",
     "priceChangeFiveDayPercent": -2.7027027027027053,
     "isRecentListing": false
   },
@@ -21017,14 +21027,6 @@
     "marketCap": 10199487,
     "xid": "25307377",
     "priceChangeFiveDayPercent": -5.000000000000004,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "CIO",
-    "industry": "Technology Hardware & Equipment",
-    "dateListed": "1984-08-16",
-    "xid": "669623901",
-    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   }
 ]

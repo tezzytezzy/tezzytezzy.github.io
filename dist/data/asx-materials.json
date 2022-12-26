@@ -18644,36 +18644,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 1181243221,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 109081980,
-        "netIncome": -42226020,
-        "period": "2021A",
-        "fPeriodEndDate": 44561,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 20338620,
-        "netIncome": 114320,
-        "period": "2020A",
-        "fPeriodEndDate": 44196,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 58800,
-        "netIncome": -3504280,
-        "period": "2019A",
-        "fPeriodEndDate": 43830,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 52570,
-        "netIncome": -4067680,
-        "period": "2018A",
-        "fPeriodEndDate": 43465,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "FTL",
@@ -26271,6 +26242,7 @@
     "isRecentListing": false,
     "priceAsk": 0.012,
     "priceBid": 0.011,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.012,
     "sector": "Materials",
@@ -32347,36 +32319,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 726963482,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 15619000,
-        "netIncome": -459000,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 16543000,
-        "netIncome": -139000,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 16652000,
-        "netIncome": -298000,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 15288000,
-        "netIncome": -735000,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "MOH",
@@ -51130,6 +51073,8 @@
     "statusCode": "",
     "isin": "AU000000XAM0",
     "priceClose": 0.03,
+    "priceDayHigh": 0.03,
+    "priceDayLow": 0.028,
     "priceFiftyTwoWeekHigh": 0.042,
     "priceFiftyTwoWeekLow": 0.022,
     "volumeAverage": 973414.538462,
