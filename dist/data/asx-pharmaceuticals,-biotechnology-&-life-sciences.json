@@ -811,7 +811,7 @@
     "priceFiftyTwoWeekHigh": 1.11,
     "priceFiftyTwoWeekLow": 0.615,
     "volumeAverage": 304907.673913,
-    "cashFlow": -14.45667,
+    "cashFlow": -14.46646,
     "earningsPerShare": -0.00436,
     "freeCashFlowYield": 0.004762165547160916,
     "priceEarningsRatio": -99999.99,
@@ -1923,8 +1923,8 @@
     "dividend": 1.7583,
     "dividendType": "F",
     "frankingPercent": 10,
-    "cashFlow": 513.5013,
-    "earningsPerShare": 7.30705,
+    "cashFlow": 509.6025,
+    "earningsPerShare": 7.25157,
     "freeCashFlowYield": 0.030110541821133745,
     "priceEarningsRatio": 39.55084,
     "priceToCash": 33.21096,
@@ -3106,8 +3106,6 @@
     "statusCode": "",
     "isin": "AU0000048621",
     "priceClose": 0.545,
-    "priceDayHigh": 0.55,
-    "priceDayLow": 0.545,
     "priceFiftyTwoWeekHigh": 0.76,
     "priceFiftyTwoWeekLow": 0.435,
     "volumeAverage": 40499.604938,
@@ -3772,8 +3770,8 @@
     "priceFiftyTwoWeekHigh": 1.43,
     "priceFiftyTwoWeekLow": 0.61,
     "volumeAverage": 1033179.336957,
-    "cashFlow": -91.0201,
-    "earningsPerShare": -0.19515,
+    "cashFlow": -90.32902,
+    "earningsPerShare": -0.19367,
     "freeCashFlowYield": -0.0000100000010000001,
     "priceEarningsRatio": -99999.99,
     "priceToCash": -99999.99,
@@ -4296,8 +4294,8 @@
     "priceFiftyTwoWeekHigh": 1.395,
     "priceFiftyTwoWeekLow": 0.79,
     "volumeAverage": 543460.619565,
-    "cashFlow": -107.0385,
-    "earningsPerShare": -0.39607,
+    "cashFlow": -106.2258,
+    "earningsPerShare": -0.39306,
     "freeCashFlowYield": -0.0000100000010000001,
     "priceEarningsRatio": -99999.99,
     "priceToCash": -99999.99,
@@ -5795,7 +5793,36 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 391148229,
     "yieldAnnual": 0,
-    "incomeStatement": []
+    "incomeStatement": [
+      {
+        "revenue": 2635080,
+        "netIncome": -7302970,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 1203340,
+        "netIncome": -6397260,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 1484220,
+        "netIncome": -3713120,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2744780,
+        "netIncome": -1710000,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "ZLD",

@@ -5088,16 +5088,6 @@
     "isRecentListing": false
   },
   {
-    "symbol": "CIO",
-    "displayName": "CONNECTED IO LIMITED",
-    "industry": "Technology Hardware & Equipment",
-    "dateListed": "1984-08-16",
-    "marketCap": "N/A",
-    "xid": "669623901",
-    "priceChangeFiveDayPercent": 0,
-    "isRecentListing": false
-  },
-  {
     "symbol": "CXZ",
     "displayName": "CONNEXION TELEMATICS LTD",
     "industry": "Software & Services",
@@ -10641,7 +10631,7 @@
     "symbol": "KGL",
     "displayName": "KGL RESOURCES LIMITED",
     "industry": "Materials",
-    "dateListed": "2005-03-17",
+    "dateListed": "2005-04-28",
     "marketCap": 90917795,
     "xid": "1450030",
     "priceChangeFiveDayPercent": -4.878048780487796,
@@ -11211,11 +11201,11 @@
     "symbol": "LGI",
     "displayName": "LGI LIMITED",
     "industry": "Utilities",
-    "dateListed": "2022-10-04",
+    "dateListed": "2012-04-30",
     "marketCap": 163343476,
     "xid": "752817943",
     "priceChangeFiveDayPercent": -10.256410256410255,
-    "isRecentListing": true
+    "isRecentListing": false
   },
   {
     "symbol": "LIS",
@@ -20323,11 +20313,11 @@
     "symbol": "WLD",
     "displayName": "WELLARD LIMITED",
     "industry": "Food, Beverage & Tobacco",
-    "dateListed": "2015-12-10",
+    "dateListed": "2022-12-23",
     "marketCap": 42500025,
     "xid": "319871741",
     "priceChangeFiveDayPercent": 0,
-    "isRecentListing": false
+    "isRecentListing": true
   },
   {
     "symbol": "WFL",
@@ -20455,7 +20445,7 @@
     "industry": "Materials",
     "dateListed": "2006-06-07",
     "marketCap": 19937743,
-    "xid": "4802238",
+    "xid": "728646352",
     "priceChangeFiveDayPercent": -2.7027027027027053,
     "isRecentListing": false
   },
@@ -21027,6 +21017,14 @@
     "marketCap": 10199487,
     "xid": "25307377",
     "priceChangeFiveDayPercent": -5.000000000000004,
+    "isRecentListing": false
+  },
+  {
+    "symbol": "CIO",
+    "industry": "Technology Hardware & Equipment",
+    "dateListed": "1984-08-16",
+    "xid": "669623901",
+    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   }
 ]

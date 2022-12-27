@@ -1117,8 +1117,8 @@
     "priceClose": 0.3,
     "priceFiftyTwoWeekHigh": 0.48,
     "priceFiftyTwoWeekLow": 0.23,
-    "cashFlow": -2.17562,
-    "earningsPerShare": -0.11115,
+    "cashFlow": -2.1591,
+    "earningsPerShare": -0.1103,
     "freeCashFlowYield": -0.0000100000010000001,
     "priceEarningsRatio": -99999.99,
     "priceToCash": -99999.99,
@@ -1399,8 +1399,8 @@
     "priceFiftyTwoWeekHigh": 0.6,
     "priceFiftyTwoWeekLow": 0.036,
     "volumeAverage": 163049.287671,
-    "cashFlow": -13.56286,
-    "earningsPerShare": -0.15723,
+    "cashFlow": -13.45988,
+    "earningsPerShare": -0.15604,
     "freeCashFlowYield": -0.0000100000010000001,
     "priceEarningsRatio": -99999.99,
     "priceToCash": -99999.99,
@@ -2013,7 +2013,36 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 129989343,
     "yieldAnnual": 0,
-    "incomeStatement": []
+    "incomeStatement": [
+      {
+        "revenue": 18138930,
+        "netIncome": -17464680,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2607130,
+        "netIncome": -6931630,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 510200,
+        "netIncome": -2036470,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 39250,
+        "netIncome": -1655520,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "KMD",
@@ -2738,7 +2767,9 @@
     "priceChangeFiveDayPercent": -1.3799448022078986,
     "isRecentListing": false,
     "priceAsk": 10.75,
-    "priceChangePercent": 0,
+    "priceBid": 10.65,
+    "priceChange": 0.040000000000000924,
+    "priceChangePercent": 0.3745318352060012,
     "priceLast": 10.72,
     "sector": "Consumer Discretionary",
     "industryGroup": "Retailing",
@@ -2746,7 +2777,6 @@
     "volume": 93754,
     "statusCode": "",
     "isin": "AU000000NCK1",
-    "priceBid": 10.65,
     "priceClose": 10.68,
     "priceDayHigh": 10.77,
     "priceDayLow": 10.47,
@@ -4082,8 +4112,8 @@
     "priceFiftyTwoWeekHigh": 0.175,
     "priceFiftyTwoWeekLow": 0.049,
     "volumeAverage": 344606.370787,
-    "cashFlow": -0.86944,
-    "earningsPerShare": -0.01059,
+    "cashFlow": -0.86284,
+    "earningsPerShare": -0.01051,
     "freeCashFlowYield": -0.0000100000010000001,
     "priceEarningsRatio": -99999.99,
     "priceToCash": -99999.99,
