@@ -3506,36 +3506,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 409704037,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 6820,
-        "netIncome": -4313300,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 820,
-        "netIncome": -6307460,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 26770,
-        "netIncome": -1037010,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 73960,
-        "netIncome": -10271310,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "GLL",

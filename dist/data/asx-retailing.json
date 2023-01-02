@@ -2005,7 +2005,36 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 135730084,
     "yieldAnnual": 0,
-    "incomeStatement": []
+    "incomeStatement": [
+      {
+        "revenue": 18138930,
+        "netIncome": -17464680,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2607130,
+        "netIncome": -6931630,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 510200,
+        "netIncome": -2036470,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 39250,
+        "netIncome": -1655520,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "KMD",

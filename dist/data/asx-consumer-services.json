@@ -2647,6 +2647,7 @@
     "isRecentListing": false,
     "priceAsk": 7.07,
     "priceBid": 5.91,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 5.9,
     "sector": "Consumer Discretionary",

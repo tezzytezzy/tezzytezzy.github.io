@@ -7562,7 +7562,7 @@
     "dateListed": "2006-12-21",
     "marketCap": 10699093,
     "xid": "25907394",
-    "priceChangeFiveDayPercent": 0,
+    "priceChangeFiveDayPercent": 3.1250000000000027,
     "isRecentListing": false
   },
   {
@@ -12875,7 +12875,7 @@
     "marketCap": 119294757,
     "xid": "723294411",
     "priceChangeFiveDayPercent": 0,
-    "isRecentListing": true
+    "isRecentListing": false
   },
   {
     "symbol": "MPR",
@@ -13955,7 +13955,7 @@
     "marketCap": 22218000,
     "xid": "719663393",
     "priceChangeFiveDayPercent": -4.166666666666655,
-    "isRecentListing": true
+    "isRecentListing": false
   },
   {
     "symbol": "OCA",

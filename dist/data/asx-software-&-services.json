@@ -6002,6 +6002,7 @@
     "isRecentListing": false,
     "priceAsk": 0.074,
     "priceBid": 0.063,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.068,
     "sector": "Information Technology",

@@ -2823,7 +2823,7 @@
     "symbol": "IMC",
     "displayName": "IMMURON LIMITED",
     "industry": "Pharmaceuticals, Biotechnology & Life Sciences",
-    "dateListed": "2022-06-01",
+    "dateListed": "1999-04-30",
     "marketCap": 19362859,
     "xid": "46073",
     "priceChangeFiveDayPercent": 3.6144578313253044,
@@ -5798,36 +5798,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 391148229,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 2635080,
-        "netIncome": -7302970,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1203340,
-        "netIncome": -6397260,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1484220,
-        "netIncome": -3713120,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2744780,
-        "netIncome": -1710000,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "ZLD",

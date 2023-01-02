@@ -4296,6 +4296,7 @@
     "isRecentListing": false,
     "priceAsk": 0.06,
     "priceBid": 0.057,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.057,
     "sector": "Materials",
@@ -19885,7 +19886,7 @@
     "priceDayLow": 0.052000000000000005,
     "priceFiftyTwoWeekHigh": 0.14294,
     "priceFiftyTwoWeekLow": 0.03056,
-    "volumeAverage": 1182759.604129,
+    "volumeAverage": 1198149.50631,
     "cashFlow": -8.63856,
     "earningsPerShare": -0.03801,
     "freeCashFlowYield": -0.0000100000010000001,
@@ -26669,7 +26670,7 @@
     "symbol": "CRB",
     "displayName": "CARBINE RESOURCES LIMITED",
     "industry": "Materials",
-    "dateListed": "2007-03-16",
+    "dateListed": "2006-02-15",
     "marketCap": 6237036,
     "xid": "6785712",
     "priceChangeFiveDayPercent": 1.3344026738283132e-14,
@@ -27733,7 +27734,7 @@
     "symbol": "CPN",
     "displayName": "CASPIN RESOURCES LIMITED",
     "industry": "Materials",
-    "dateListed": "1999-10-22",
+    "dateListed": "2020-11-25",
     "marketCap": 45334062,
     "xid": "623980189",
     "priceChangeFiveDayPercent": 0.8000000000000007,
@@ -45435,7 +45436,7 @@
     "priceDayLow": 0.047,
     "priceFiftyTwoWeekHigh": 0.09,
     "priceFiftyTwoWeekLow": 0.039,
-    "volumeAverage": 1676466.3,
+    "volumeAverage": 1695301.808989,
     "cashFlow": 71.46349,
     "earningsPerShare": 0.00505,
     "freeCashFlowYield": 0.3691276406468593,
@@ -46416,7 +46417,8 @@
     "isRecentListing": false,
     "priceAsk": 25.04,
     "priceBid": 24.900000000000002,
-    "priceChangePercent": 0,
+    "priceChange": 0.18999999999999773,
+    "priceChangePercent": 0.7645875251508962,
     "priceLast": 25.04,
     "sector": "Financials",
     "industryGroup": "Diversified Financials",
@@ -49749,7 +49751,7 @@
     "dateListed": "2006-12-21",
     "marketCap": 10699093,
     "xid": "25907394",
-    "priceChangeFiveDayPercent": 0,
+    "priceChangeFiveDayPercent": 3.1250000000000027,
     "isRecentListing": false,
     "priceChange": 0,
     "priceChangePercent": 0,
@@ -49759,9 +49761,9 @@
     "statusCode": "RE|XE",
     "isin": "AU0000107088",
     "priceClose": 0.33,
-    "priceFiftyTwoWeekHigh": 0.42,
-    "priceFiftyTwoWeekLow": 0.24,
-    "volumeAverage": 18624.055319,
+    "priceFiftyTwoWeekHigh": 0.40727,
+    "priceFiftyTwoWeekLow": 0.23273,
+    "volumeAverage": 19603.575288,
     "cashFlow": 4.61625,
     "earningsPerShare": 0.10074,
     "freeCashFlowYield": 0.33620904133353957,
@@ -52085,36 +52087,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 409704037,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 6820,
-        "netIncome": -4313300,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 820,
-        "netIncome": -6307460,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 26770,
-        "netIncome": -1037010,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 73960,
-        "netIncome": -10271310,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "FYI",
@@ -62978,7 +62951,7 @@
     "symbol": "IMC",
     "displayName": "IMMURON LIMITED",
     "industry": "Pharmaceuticals, Biotechnology & Life Sciences",
-    "dateListed": "2022-06-01",
+    "dateListed": "1999-04-30",
     "marketCap": 19362859,
     "xid": "46073",
     "priceChangeFiveDayPercent": 3.6144578313253044,
@@ -66900,10 +66873,10 @@
     "dividend": 0.315,
     "dividendType": "F",
     "frankingPercent": 0,
-    "cashFlow": -99.2,
-    "earningsPerShare": 1.16158,
+    "cashFlow": -146.3557,
+    "earningsPerShare": 1.71375,
     "freeCashFlowYield": 0.08582188183356734,
-    "priceEarningsRatio": 15.44448,
+    "priceEarningsRatio": 15.40483,
     "priceToCash": 11.65204,
     "foreignExempt": false,
     "shareDescription": "Chess Depositary Interests 1:1",
@@ -68537,7 +68510,36 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 135730084,
     "yieldAnnual": 0,
-    "incomeStatement": []
+    "incomeStatement": [
+      {
+        "revenue": 18138930,
+        "netIncome": -17464680,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2607130,
+        "netIncome": -6931630,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 510200,
+        "netIncome": -2036470,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 39250,
+        "netIncome": -1655520,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
+        "curCode": "AUD"
+      }
+    ]
   },
   {
     "symbol": "KLR",
@@ -84668,7 +84670,7 @@
     "marketCap": 119294757,
     "xid": "723294411",
     "priceChangeFiveDayPercent": 0,
-    "isRecentListing": true,
+    "isRecentListing": false,
     "priceBid": 1.035,
     "priceChange": 0,
     "priceChangePercent": 0,
@@ -87394,6 +87396,9 @@
     "xid": "369611400",
     "priceChangeFiveDayPercent": -1.4285714285714297,
     "isRecentListing": false,
+    "priceAsk": 0.07100000000000001,
+    "priceBid": 0.07,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.069,
     "sector": "Health Care",
@@ -87402,8 +87407,6 @@
     "volume": 0,
     "statusCode": "",
     "isin": "AU000000NTI9",
-    "priceAsk": 0.07100000000000001,
-    "priceBid": 0.07,
     "priceClose": 0.069,
     "priceFiftyTwoWeekHigh": 0.13,
     "priceFiftyTwoWeekLow": 0.044,
@@ -91798,7 +91801,7 @@
     "marketCap": 22218000,
     "xid": "719663393",
     "priceChangeFiveDayPercent": -4.166666666666655,
-    "isRecentListing": true,
+    "isRecentListing": false,
     "priceAsk": 0.38,
     "priceBid": 0.355,
     "priceChange": 0,
@@ -93521,6 +93524,7 @@
     "isRecentListing": false,
     "priceAsk": 0.074,
     "priceBid": 0.063,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.068,
     "sector": "Information Technology",
@@ -108298,6 +108302,7 @@
     "isRecentListing": false,
     "priceAsk": 7.07,
     "priceBid": 5.91,
+    "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 5.9,
     "sector": "Consumer Discretionary",
@@ -111670,8 +111675,6 @@
     "xid": "245013",
     "priceChangeFiveDayPercent": 5.555555555555561,
     "isRecentListing": false,
-    "priceAsk": 0.2,
-    "priceBid": 0.18,
     "priceChange": 0.010000000000000009,
     "priceChangePercent": 5.555555555555561,
     "priceLast": 0.19,
@@ -111681,6 +111684,8 @@
     "volume": 35501,
     "statusCode": "RE",
     "isin": "AU0000246704",
+    "priceAsk": 0.2,
+    "priceBid": 0.18,
     "priceClose": 0.18,
     "priceDayHigh": 0.19,
     "priceDayLow": 0.165,
@@ -124472,7 +124477,7 @@
     "symbol": "TPO",
     "displayName": "TIAN POH RESOURCES LIMITED",
     "industry": "Materials",
-    "dateListed": "2014-11-11",
+    "dateListed": "2014-11-02",
     "marketCap": -1,
     "xid": "80254703",
     "priceChangeFiveDayPercent": 0,
@@ -127610,8 +127615,6 @@
     "priceChange": 0,
     "priceChangePercent": 0,
     "priceLast": 0.058,
-    "sector": "Materials",
-    "industryGroup": "Materials",
     "securityType": 1,
     "volume": 65929,
     "statusCode": "",
@@ -133192,36 +133195,7 @@
     "shareDescription": "Ordinary Fully Paid",
     "numOfShares": 391148229,
     "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 2635080,
-        "netIncome": -7302970,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1203340,
-        "netIncome": -6397260,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1484220,
-        "netIncome": -3713120,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2744780,
-        "netIncome": -1710000,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
+    "incomeStatement": []
   },
   {
     "symbol": "WNX",
@@ -133925,7 +133899,7 @@
     "industry": "Materials",
     "dateListed": "2006-06-07",
     "marketCap": 21045395,
-    "xid": "728646352",
+    "xid": "4802238",
     "priceChangeFiveDayPercent": 8.333333333333341,
     "isRecentListing": false,
     "priceAsk": 0.2,
