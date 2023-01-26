@@ -424,7 +424,7 @@
     "displayName": "ADELONG GOLD LIMITED",
     "industry": "Materials",
     "dateListed": "2007-03-21",
-    "marketCap": 6423512,
+    "marketCap": 7473512,
     "xid": "6393494",
     "priceChangeFiveDayPercent": -22.222222222222214,
     "isRecentListing": false
@@ -554,7 +554,7 @@
     "displayName": "ADX ENERGY LTD",
     "industry": "Energy",
     "dateListed": "1987-01-29",
-    "marketCap": 24590388,
+    "marketCap": 24631875,
     "xid": "39150",
     "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
@@ -643,7 +643,7 @@
     "symbol": "AFP",
     "displayName": "AFT PHARMACEUTICALS LIMITED",
     "industry": "Pharmaceuticals, Biotechnology & Life Sciences",
-    "dateListed": "2015-01-23",
+    "dateListed": "2015-12-22",
     "marketCap": 351301971,
     "xid": "321649575",
     "priceChangeFiveDayPercent": 0,
@@ -1444,7 +1444,7 @@
     "displayName": "ARAFURA RARE EARTHS LTD",
     "industry": "Materials",
     "dateListed": "2003-11-05",
-    "marketCap": 1081588346,
+    "marketCap": 1117580795,
     "xid": "48403",
     "priceChangeFiveDayPercent": 11.00000000000001,
     "isRecentListing": false
@@ -1674,7 +1674,7 @@
     "displayName": "AROVELLA THERAPEUTICS LIMITED",
     "industry": "Pharmaceuticals, Biotechnology & Life Sciences",
     "dateListed": "2002-01-24",
-    "marketCap": 16838366,
+    "marketCap": 18625867,
     "xid": "98538",
     "priceChangeFiveDayPercent": 4.1666666666666705,
     "isRecentListing": false
@@ -3084,7 +3084,7 @@
     "displayName": "BIGTINCAN HOLDINGS LIMITED",
     "industry": "Software & Services",
     "dateListed": "2017-03-24",
-    "marketCap": 339762111,
+    "marketCap": 340061730,
     "xid": "403677200",
     "priceChangeFiveDayPercent": -7.758620689655161,
     "isRecentListing": false
@@ -3384,7 +3384,7 @@
     "displayName": "BOAB METALS LIMITED",
     "industry": "Materials",
     "dateListed": "2004-07-15",
-    "marketCap": 49505289,
+    "marketCap": 49721889,
     "xid": "171967",
     "priceChangeFiveDayPercent": 3.5714285714285543,
     "isRecentListing": false
@@ -3874,7 +3874,7 @@
     "displayName": "CALIX LIMITED",
     "industry": "Materials",
     "dateListed": "2018-07-20",
-    "marketCap": 959359017,
+    "marketCap": 960974245,
     "xid": "479653993",
     "priceChangeFiveDayPercent": 1.9193857965451158,
     "isRecentListing": false
@@ -4483,7 +4483,7 @@
     "symbol": "CEL",
     "displayName": "CHALLENGER EXPLORATION LIMITED",
     "industry": "Energy",
-    "dateListed": "2007-11-07",
+    "dateListed": "2007-11-21",
     "marketCap": 183017632,
     "xid": "8952554",
     "priceChangeFiveDayPercent": 1.5860328923216522e-14,
@@ -5047,16 +5047,6 @@
     "marketCap": 23279490,
     "xid": "7356424",
     "priceChangeFiveDayPercent": 40,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "CIO",
-    "displayName": "CONNECTED IO LIMITED",
-    "industry": "Technology Hardware & Equipment",
-    "dateListed": "1984-08-16",
-    "marketCap": "N/A",
-    "xid": "669623901",
-    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   },
   {
@@ -6504,19 +6494,9 @@
     "displayName": "EDEN INNOVATIONS LTD",
     "industry": "Energy",
     "dateListed": "2006-06-06",
-    "marketCap": 13656373,
+    "marketCap": 14657135,
     "xid": "4574060",
     "priceChangeFiveDayPercent": -9.090909090909085,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "EDEN",
-    "displayName": "EDEN INNOVATIONS LTD",
-    "industry": "Energy",
-    "dateListed": "2006-06-06",
-    "marketCap": 13656373,
-    "xid": "772998744",
-    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   },
   {
@@ -7262,7 +7242,7 @@
     "displayName": "EVION GROUP NL",
     "industry": "Materials",
     "dateListed": "2018-01-19",
-    "marketCap": 17863172,
+    "marketCap": 17878922,
     "xid": "445699162",
     "priceChangeFiveDayPercent": -7.352941176470594,
     "isRecentListing": false
@@ -7392,19 +7372,9 @@
     "displayName": "FARM PRIDE FOODS LIMITED",
     "industry": "Food, Beverage & Tobacco",
     "dateListed": "1997-12-19",
-    "marketCap": 5518018,
+    "marketCap": 8022149,
     "xid": "112378",
     "priceChangeFiveDayPercent": -13.91304347826087,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "FRMN",
-    "displayName": "FARM PRIDE FOODS LIMITED",
-    "industry": "Food, Beverage & Tobacco",
-    "dateListed": "1997-12-19",
-    "marketCap": 5518018,
-    "xid": "777375989",
-    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   },
   {
@@ -7532,7 +7502,7 @@
     "displayName": "FIN RESOURCES LIMITED",
     "industry": "Materials",
     "dateListed": "1989-11-02",
-    "marketCap": 8951677,
+    "marketCap": 8983677,
     "xid": "200633",
     "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
@@ -8328,16 +8298,6 @@
     "isRecentListing": false
   },
   {
-    "symbol": "GME",
-    "displayName": "GME RESOURCES LIMITED",
-    "industry": "Materials",
-    "dateListed": "1980-08-21",
-    "marketCap": 67463160,
-    "xid": "139906",
-    "priceChangeFiveDayPercent": -9.090909090909086,
-    "isRecentListing": false
-  },
-  {
     "symbol": "GRL",
     "displayName": "GODOLPHIN RESOURCES LIMITED",
     "industry": "Materials",
@@ -8572,7 +8532,7 @@
     "displayName": "GREAT SOUTHERN MINING LIMITED",
     "industry": "Materials",
     "dateListed": "2011-04-14",
-    "marketCap": 17409852,
+    "marketCap": 17752709,
     "xid": "30892440",
     "priceChangeFiveDayPercent": -9.677419354838708,
     "isRecentListing": false
@@ -8680,7 +8640,7 @@
     "displayName": "GROUP 6 METALS LIMITED",
     "industry": "Materials",
     "dateListed": "1967-09-21",
-    "marketCap": 122682051,
+    "marketCap": 125262051,
     "xid": "142754",
     "priceChangeFiveDayPercent": -2.9411764705882377,
     "isRecentListing": false
@@ -11646,7 +11606,7 @@
     "displayName": "MACH7 TECHNOLOGIES LIMITED",
     "industry": "Health Care Equipment & Services",
     "dateListed": "2005-11-30",
-    "marketCap": 179617036,
+    "marketCap": 179767036,
     "xid": "3590522",
     "priceChangeFiveDayPercent": 4.081632653061228,
     "isRecentListing": false
@@ -11785,7 +11745,7 @@
     "symbol": "MNS",
     "displayName": "MAGNIS ENERGY TECHNOLOGIES LTD",
     "industry": "Materials",
-    "dateListed": "2005-10-25",
+    "dateListed": "2020-02-13",
     "marketCap": 417242538,
     "xid": "3413635",
     "priceChangeFiveDayPercent": 4.651162790697678,
@@ -13134,7 +13094,7 @@
     "displayName": "NATIONAL AUSTRALIA BANK LIMITED",
     "industry": "Banks",
     "dateListed": "1962-01-31",
-    "marketCap": 98640059843,
+    "marketCap": 98617655472,
     "xid": "208940",
     "priceChangeFiveDayPercent": -0.5999368487527669,
     "isRecentListing": false
@@ -13234,7 +13194,7 @@
     "displayName": "NETLINKZ LIMITED",
     "industry": "Software & Services",
     "dateListed": "2011-01-13",
-    "marketCap": 73225263,
+    "marketCap": 73330263,
     "xid": "50674086",
     "priceChangeFiveDayPercent": 4.761904761904749,
     "isRecentListing": false
@@ -13264,7 +13224,7 @@
     "displayName": "NEURIZER LTD",
     "industry": "Energy",
     "dateListed": "2005-03-17",
-    "marketCap": 103451767,
+    "marketCap": 103461067,
     "xid": "1450031",
     "priceChangeFiveDayPercent": -2.1052631578947385,
     "isRecentListing": false
@@ -13284,7 +13244,7 @@
     "displayName": "NEUROTECH INTERNATIONAL LIMITED",
     "industry": "Health Care Equipment & Services",
     "dateListed": "2016-11-04",
-    "marketCap": 56878020,
+    "marketCap": 57677754,
     "xid": "369611400",
     "priceChangeFiveDayPercent": 5.970149253731348,
     "isRecentListing": false
@@ -14762,19 +14722,9 @@
     "displayName": "PEARL GULL IRON LIMITED",
     "industry": "Materials",
     "dateListed": "2021-09-20",
-    "marketCap": 3554336,
+    "marketCap": 4053571,
     "xid": "673247542",
     "priceChangeFiveDayPercent": 3.4482758620689564,
-    "isRecentListing": false
-  },
-  {
-    "symbol": "PLGNA",
-    "displayName": "PEARL GULL IRON LIMITED",
-    "industry": "Materials",
-    "dateListed": "2021-09-20",
-    "marketCap": 3554336,
-    "xid": "776271718",
-    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   },
   {
@@ -15342,7 +15292,7 @@
     "displayName": "PRESCIENT THERAPEUTICS LIMITED",
     "industry": "Pharmaceuticals, Biotechnology & Life Sciences",
     "dateListed": "1986-12-19",
-    "marketCap": 90194529,
+    "marketCap": 90320252,
     "xid": "280607",
     "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
@@ -15572,7 +15522,7 @@
     "displayName": "PUREPROFILE LTD",
     "industry": "Media & Entertainment",
     "dateListed": "2015-07-29",
-    "marketCap": 46986391,
+    "marketCap": 47428911,
     "xid": "293458769",
     "priceChangeFiveDayPercent": -4.761904761904765,
     "isRecentListing": false
@@ -16312,7 +16262,7 @@
     "displayName": "RENERGEN LIMITED",
     "industry": "Energy",
     "dateListed": "2019-06-06",
-    "marketCap": 291827113,
+    "marketCap": 291968813,
     "xid": "537694132",
     "priceChangeFiveDayPercent": 12.5,
     "isRecentListing": false
@@ -16372,7 +16322,7 @@
     "displayName": "RESOLUTION MINERALS LTD",
     "industry": "Materials",
     "dateListed": "2017-09-22",
-    "marketCap": 9627716,
+    "marketCap": 9717716,
     "xid": "419550458",
     "priceChangeFiveDayPercent": 1.927470528863119e-14,
     "isRecentListing": false
@@ -16652,7 +16602,7 @@
     "displayName": "RMA GLOBAL LIMITED",
     "industry": "Media & Entertainment",
     "dateListed": "2018-07-05",
-    "marketCap": 52505596,
+    "marketCap": 53004550,
     "xid": "473078969",
     "priceChangeFiveDayPercent": 4.444444444444448,
     "isRecentListing": false
@@ -17790,7 +17740,7 @@
     "displayName": "SPECTUR LIMITED",
     "industry": "Technology Hardware & Equipment",
     "dateListed": "2017-08-01",
-    "marketCap": 5950496,
+    "marketCap": 5974822,
     "xid": "417089262",
     "priceChangeFiveDayPercent": 14.285714285714286,
     "isRecentListing": false
@@ -19008,7 +18958,7 @@
     "displayName": "TLOU ENERGY LIMITED",
     "industry": "Energy",
     "dateListed": "2013-04-09",
-    "marketCap": 25264123,
+    "marketCap": 28244334,
     "xid": "55587714",
     "priceChangeFiveDayPercent": -2.8571428571428594,
     "isRecentListing": false
@@ -19708,7 +19658,7 @@
     "displayName": "VHM LIMITED",
     "industry": "Materials",
     "dateListed": "2023-01-09",
-    "marketCap": 200029347,
+    "marketCap": 205247325,
     "xid": "772116662",
     "priceChangeFiveDayPercent": -6.306306306306311,
     "isRecentListing": true
@@ -20037,7 +19987,7 @@
     "symbol": "WMA",
     "displayName": "WAM ALTERNATIVE ASSETS LIMITED",
     "industry": "Not Applic",
-    "dateListed": "2014-06-16",
+    "dateListed": "2000-10-03",
     "marketCap": 213402017,
     "xid": "75736395",
     "priceChangeFiveDayPercent": 0,
@@ -20329,7 +20279,7 @@
     "industry": "Materials",
     "dateListed": "2006-06-07",
     "marketCap": 22153048,
-    "xid": "4802238",
+    "xid": "728646352",
     "priceChangeFiveDayPercent": 5.263157894736847,
     "isRecentListing": false
   },
@@ -20628,7 +20578,7 @@
     "displayName": "XANADU MINES LTD",
     "industry": "Materials",
     "dateListed": "2010-12-21",
-    "marketCap": 42504606,
+    "marketCap": 43761242,
     "xid": "27459186",
     "priceChangeFiveDayPercent": 3.3333333333333366,
     "isRecentListing": false
@@ -20911,6 +20861,14 @@
     "marketCap": 9414911,
     "xid": "25307377",
     "priceChangeFiveDayPercent": 5.8823529411764754,
+    "isRecentListing": false
+  },
+  {
+    "symbol": "CIO",
+    "industry": "Technology Hardware & Equipment",
+    "dateListed": "1984-08-16",
+    "xid": "669623901",
+    "priceChangeFiveDayPercent": 0,
     "isRecentListing": false
   }
 ]
