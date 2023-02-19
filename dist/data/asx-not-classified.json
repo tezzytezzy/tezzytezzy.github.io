@@ -1,89 +1,28 @@
 [
   {
-    "symbol": "AWV",
-    "displayName": "ANOVA METALS LIMITED",
-    "marketCap": 86176249,
-    "xid": "31718959",
-    "priceChangeFiveDayPercent": -13.636363636363637,
-    "isRecentListing": false,
-    "priceAsk": 0.2,
-    "priceBid": 0.19,
-    "priceChange": 0,
-    "priceChangePercent": 0,
-    "priceLast": 0.19,
-    "securityType": null,
-    "volume": 116819,
-    "statusCode": "RE",
-    "isin": "AU000000AWV3",
-    "priceClose": 0.19,
-    "priceDayHigh": 0.2,
-    "priceDayLow": 0.19,
-    "priceFiftyTwoWeekHigh": 0.22,
-    "priceFiftyTwoWeekLow": 0.06,
-    "volumeAverage": 252563.641558,
-    "cashFlow": -3.78928,
-    "earningsPerShare": -0.02525,
-    "freeCashFlowYield": -0.0000100000010000001,
-    "priceEarningsRatio": -99999.99,
-    "priceToCash": -99999.99,
-    "shareDescription": "Ordinary Fully Paid",
-    "numOfShares": 453559204,
-    "yieldAnnual": 0,
-    "incomeStatement": [
-      {
-        "revenue": 1000,
-        "netIncome": -3649410,
-        "period": "2022A",
-        "fPeriodEndDate": 44742,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 1120,
-        "netIncome": -4176970,
-        "period": "2021A",
-        "fPeriodEndDate": 44377,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 550,
-        "netIncome": 2770870,
-        "period": "2020A",
-        "fPeriodEndDate": 44012,
-        "curCode": "AUD"
-      },
-      {
-        "revenue": 2807580,
-        "netIncome": -6910890,
-        "period": "2019A",
-        "fPeriodEndDate": 43646,
-        "curCode": "AUD"
-      }
-    ]
-  },
-  {
     "symbol": "HLF",
     "displayName": "HALO FOOD CO. LIMITED",
-    "marketCap": 8616549,
+    "marketCap": 8816934,
     "xid": "479285162",
-    "priceChangeFiveDayPercent": -15.384615384615387,
+    "priceChangeFiveDayPercent": -11.538461538461537,
     "isRecentListing": false,
-    "priceAsk": 0.023,
+    "priceAsk": 0.024,
     "priceBid": 0.021,
-    "priceChange": 0.000499999999999997,
-    "priceChangePercent": 2.325581395348823,
-    "priceLast": 0.022,
+    "priceChange": 0.0010000000000000009,
+    "priceChangePercent": 4.545454545454549,
+    "priceLast": 0.023,
     "sector": "Consumer Staples",
     "industryGroup": "Food, Beverage & Tobacco",
     "securityType": 1,
-    "volume": 503683,
+    "volume": 228228,
     "statusCode": "",
     "isin": "AU0000186702",
-    "priceClose": 0.021500000000000002,
-    "priceDayHigh": 0.022,
-    "priceDayLow": 0.022,
-    "priceFiftyTwoWeekHigh": 0.105,
+    "priceClose": 0.022,
+    "priceDayHigh": 0.023,
+    "priceDayLow": 0.023,
+    "priceFiftyTwoWeekHigh": 0.1,
     "priceFiftyTwoWeekLow": 0.021,
-    "volumeAverage": 780009.772152,
+    "volumeAverage": 773112.5,
     "cashFlow": -4.92853,
     "earningsPerShare": -0.02884,
     "freeCashFlowYield": -0.0000100000010000001,
@@ -119,6 +58,56 @@
         "netIncome": -3290370,
         "period": "2019A",
         "fPeriodEndDate": 43555,
+        "curCode": "AUD"
+      }
+    ]
+  },
+  {
+    "symbol": "WA8",
+    "displayName": "WARRIEDAR RESOURCES LIMITED",
+    "marketCap": 86176249,
+    "xid": "31718959",
+    "priceChangeFiveDayPercent": 0,
+    "isRecentListing": false,
+    "priceChangePercent": 0,
+    "sector": "Materials",
+    "industryGroup": "Materials",
+    "securityType": 1,
+    "statusCode": "RE",
+    "isin": "AU0000267874",
+    "priceFiftyTwoWeekHigh": 0.22,
+    "priceFiftyTwoWeekLow": 0.06,
+    "volumeAverage": 300575.1270833334,
+    "shareDescription": "Ordinary Fully Paid",
+    "numOfShares": 453559204,
+    "yieldAnnual": 0,
+    "incomeStatement": [
+      {
+        "revenue": 1000,
+        "netIncome": -3649410,
+        "period": "2022A",
+        "fPeriodEndDate": 44742,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 1120,
+        "netIncome": -4176970,
+        "period": "2021A",
+        "fPeriodEndDate": 44377,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 550,
+        "netIncome": 2770870,
+        "period": "2020A",
+        "fPeriodEndDate": 44012,
+        "curCode": "AUD"
+      },
+      {
+        "revenue": 2807580,
+        "netIncome": -6910890,
+        "period": "2019A",
+        "fPeriodEndDate": 43646,
         "curCode": "AUD"
       }
     ]
