@@ -1,10 +1,28 @@
 name: Peer Analysis
 on:
-  schedule:
-    # Github Actions runs on UTC. AEST is UTC + 10 (non-Daylight Saving) / 11 (Daylight Saving)
-    # https://crontab.guru
-    # “At 12:00 + 10:00/11:00 = 22:00/23:00 (AEST) on every day-of-week from Sunday through Thursday.”
-    - cron: "0 12 * * 0-4"
+  # This process has been failing since March 26, 2023, with the following error:
+  # The schedule clause below is now commented out
+  #
+  # Run node ./dist/scripts/asx.js
+  # node:internal/process/promises:279
+  #             triggerUncaughtException(err, true /* fromPromise */);
+  #             ^
+
+  # Error: unable to verify the first certificate
+  #     at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)
+  #     at TLSSocket.emit (node:events:526:28)
+  #     at TLSSocket._finishInit (node:_tls_wrap:944:8)
+  #     at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12) {
+  #   code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+  #   response: undefined
+  # }
+  # Error: Process completed with exit code 1.
+
+  # schedule:
+  #   # Github Actions runs on UTC. AEST is UTC + 10 (non-Daylight Saving) / 11 (Daylight Saving)
+  #   # https://crontab.guru
+  #   # “At 12:00 + 10:00/11:00 = 22:00/23:00 (AEST) on every day-of-week from Sunday through Thursday.”
+  #   - cron: "0 12 * * 0-4"
   workflow_dispatch: # For being able to manually click 'Run Workflow' button on Github Actions
 jobs:
   ASX-Data-Loader:
